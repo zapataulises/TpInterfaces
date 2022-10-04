@@ -26,7 +26,9 @@ body{
     width: 4em;
 }
 footer{
-    padding: 0 0 0 0;
+    padding: 45px;
+    background-color: #120B2A;
+    margin: 0%;
 }
 
 footer p{
