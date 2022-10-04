@@ -1,7 +1,15 @@
-.p2{
+*{
     font-family: 'Galindo';
+}
+.p2{
 font-style: normal;
 font-weight: 400;
 font-size: 1.2em;
 line-height: 23px;
+}
+
+.contact a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgb(177, 177, 177);
 }

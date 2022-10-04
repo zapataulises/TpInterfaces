@@ -1,4 +1,4 @@
-body{
+*{
     margin: 0;
 }
 
@@ -89,30 +89,30 @@ body{
 
 /*Footer*/
 footer{
-    padding: 45px;
     background-color: #120B2A;
     margin: 0%;
     color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
+footer h1{
+ padding-left: 1em;
+ padding-bottom: 0.5em;
 
-footer p{
-    font-family: 'Galindo';
-    padding: 20px 0 0 20px;
-    color: white;
 }
 footer li{
     justify-content: space-around;
     font-size: 1em;
-    color: white;  
-    padding: 20px;  
+    padding-bottom: 12px;  
+    list-style: none;
 }
 .container{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-inline: 1em;
 }
 .copyright{
-    color: white;
     background-color: #080416;
     display: flex;
     align-content: center;
