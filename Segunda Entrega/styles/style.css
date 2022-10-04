@@ -2,13 +2,11 @@ body{
     margin: 0;
 }
 
-/*Navegacion*/
+/*Header*/
 .icon{
     width: 5.2em;
     height: 5.2em;
 }
-
-
 
 .navbar{
     display: flex;
@@ -24,35 +22,6 @@ body{
 .userlogo{
     height: 4em;
     width: 4em;
-}
-footer{
-    padding: 45px;
-    background-color: #120B2A;
-    margin: 0%;
-}
-
-footer p{
-    font-family: 'Galindo';
-    padding: 20px 0 0 20px;
-    color: white;
-}
-footer li{
-    justify-content: space-around;
-    font-size: em;
-    color: white;  
-    padding: 20px;  
-}
-.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.copyright{
-    color: white;
-    background-color: #080416;
-    display: flex;
-    align-content: center;
-    justify-content: center;
 }
 
 
@@ -118,3 +87,34 @@ footer li{
 }
 
 
+/*Footer*/
+footer{
+    padding: 45px;
+    background-color: #120B2A;
+    margin: 0%;
+    color: white;
+}
+
+footer p{
+    font-family: 'Galindo';
+    padding: 20px 0 0 20px;
+    color: white;
+}
+footer li{
+    justify-content: space-around;
+    font-size: 1em;
+    color: white;  
+    padding: 20px;  
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.copyright{
+    color: white;
+    background-color: #080416;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
