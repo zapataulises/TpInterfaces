@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+}
+
+/*Navegacion*/
+.icon{
+    width: 5.2em;
+    height: 5.2em;
+}
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1em;
+    align-items: center;
+    background-color: #190F41;
+}
+
+.botonera{
+    display: none;
+}
+.userlogo{
+    height: 4em;
+    width: 4em;
+}
+
+
+
+@media (min-width: 769px){
+    .botonera{
+        display: flex;
+        gap: 1.3em;
+    }
+    .catLogo{
+        height: 2.5em;
+        width: 2.5em;
+    }
+    .navbar{
+        padding-inline: 2em;
+    }
+    .nav-btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 3.5em;
+        padding: 0.3em 0.5em 0.3em 0.3em;
+        gap: 0.2em;
+
+        background: radial-gradient(50% 50% at 50% 50%, rgba(94, 55, 165, 0.21) 0%, rgba(94, 55, 165, 0.53) 20.83%, #5E37A5 100%);
+        background-size: cover  ;
+
+        border: 2px solid;
+        border-radius: 5px;
+    }
+}
+
+/*ColoresBtn*/
+.aventuranav{
+    border-color: rgba(0, 255, 10, 1);    
+}
+.aventuratext{
+    filter: drop-shadow(0px 0px 6px rgba(0, 255, 10, 1));
+}
+.accionnav{
+    border-color: rgba(250, 0, 255, 1)
+}
+.acciontext{
+    filter: drop-shadow(0px 0px 6px rgba(250, 0, 255, 1));
+}
+.casualnav{
+    border-color: rgba(0, 255, 255, 1);
+}
+.casualtext{
+    filter: drop-shadow(0px 0px 6px rgba(0, 255, 255, 1));
+}
+.carrerasnav{
+    border-color: rgba(255, 0, 0, 1);
+}
+.carrerastext{
+    filter: drop-shadow(0px 0px 6px rgba(255, 0, 0, 1));
+}
+.deportesnav{
+    border-color: rgba(255, 138, 0, 1);
+}
+.deportestext{
+    filter: drop-shadow(0px 0px 6px rgba(255, 138, 0, 1));
+}
+
+
