@@ -25,6 +25,33 @@ body{
     height: 4em;
     width: 4em;
 }
+footer{
+    padding: 0 0 0 0;
+}
+
+footer p{
+    font-family: 'Galindo';
+    padding: 20px 0 0 20px;
+    color: white;
+}
+footer li{
+    justify-content: space-around;
+    font-size: em;
+    color: white;  
+    padding: 20px;  
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.copyright{
+    color: white;
+    background-color: #080416;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
 
 
 
