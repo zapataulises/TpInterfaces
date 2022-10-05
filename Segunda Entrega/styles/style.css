@@ -104,7 +104,7 @@ footer h1{
 footer li{
     justify-content: space-around;
     font-size: 1em;
-    padding-bottom: 12px;  
+    padding-bottom: 1em;  
     list-style: none;
 }
 .container{
