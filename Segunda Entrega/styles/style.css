@@ -170,7 +170,7 @@ footer li{
     width: 200px;
     height: 200px;
 }
-.boxe.free:hover .juegos{
+.boxe:hover .juegos, .free:hover .juegos{
     transform: scale(1.09);
     filter: blur(1px);
 
@@ -182,10 +182,7 @@ footer li{
     position: absolute;
     background-color: grey;
     color: yellow;
-    align-content: center;
-    top: 85%;
-    width: 90px;
-    height: 90px;
+    top: 80%;
     padding: 0%;
     margin: 0%;
 }
