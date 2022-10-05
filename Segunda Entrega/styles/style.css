@@ -126,3 +126,50 @@ footer li{
 .redes img{
     width: 15em;
 }
+/*Carrusel Recomendados*/
+.carrusel{
+    margin: 25px;
+    padding-left: 99px;
+    position: relative;
+    width: 90%;
+    height: 10%;
+}
+.carrusel.portada{
+    width: auto;
+}
+.juegos{
+    display: flexbox;
+    width: 200px;
+}
+
+.portada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-left: 4em;
+}
+.jugar{
+    display: none;
+}
+
+.boxe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxe:hover .juegos{
+    transform: scale(1.09);
+    filter: blur(2px);
+
+}
+
+.boxe:hover .jugar{
+    display: block;
+    position: absolute;
+    top: 85%;
+    width: 90px;
+    height: 90px;
+    padding: 0%;
+    margin: 0%;
+}
