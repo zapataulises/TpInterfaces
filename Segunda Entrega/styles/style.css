@@ -128,10 +128,11 @@ footer li{
 /*Carrusel*/
 .carrusel{
     margin-left: 25px;
+padding-block: 13px;
     padding-left: 25px;
     position: relative;
     width: auto;
-    height: 10%;
+    height: auto;
     overflow-x: scroll;
 
 }
@@ -170,6 +171,7 @@ footer li{
     width: 200px;
     height: 200px;
 }
+
 .boxe:hover .juegos{
     transform: scale(1.09);
     filter: blur(1px);
@@ -183,8 +185,6 @@ footer li{
     color: yellow;
     align-content: center;
     top: 85%;
-    width: 90px;
-    height: 90px;
     padding: 0%;
     margin: 0%;
 }
