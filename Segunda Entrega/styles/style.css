@@ -170,7 +170,7 @@ footer li{
     width: 200px;
     height: 200px;
 }
-.boxe.free:hover .juegos{
+.boxe:hover .juegos{
     transform: scale(1.09);
     filter: blur(1px);
 
