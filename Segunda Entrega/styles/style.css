@@ -110,11 +110,19 @@ footer li{
 .container{
     display: flex;
     justify-content: space-between;
-    padding-inline: 1em;
+    padding-inline: 2em;
 }
 .copyright{
     background-color: #080416;
     display: flex;
     align-content: center;
     justify-content: center;
+}
+.redes{
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+.redes img{
+    width: 15em;
 }
