@@ -132,6 +132,8 @@ footer li{
     position: relative;
     width: 90%;
     height: 10%;
+    overflow-x: scroll;
+
 }
 .carrusel.portada{
     width: auto;
@@ -139,6 +141,7 @@ footer li{
 .juegos{
     display: flexbox;
     width: 200px;
+    scroll-snap-align: center
 }
 
 .portada{
@@ -160,6 +163,7 @@ footer li{
 .boxe:hover .juegos{
     transform: scale(1.09);
     filter: blur(2px);
+
 
 }
 
