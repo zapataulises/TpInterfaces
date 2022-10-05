@@ -205,3 +205,13 @@ padding-block: 13px;
 .boxe:hover .dolar{
     display: none;
 }
+/*Hero*/
+.hero-container{
+    width: 100%;
+    height: 450px;
+}
+
+.hero{
+    width: auto;
+    height: auto;
+}
