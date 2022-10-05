@@ -140,7 +140,8 @@ footer li{
 }
 .juegos{
     display: flexbox;
-    width: 200px;
+    width: 100%;
+    height: 100%;
     scroll-snap-align: center
 }
 
@@ -155,14 +156,16 @@ footer li{
     display: none;
 }
 
-.boxe{
+.boxe,.free{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 200px;
+    height: 200px;
 }
-.boxe:hover .juegos{
+.boxe.free:hover .juegos{
     transform: scale(1.09);
-    filter: blur(2px);
+    filter: blur(1px);
 
 
 }
@@ -178,4 +181,18 @@ footer li{
     height: 90px;
     padding: 0%;
     margin: 0%;
+}
+.free .dolar{
+    display: none;
+}
+.dolar{
+    display: flex;
+    flex-flow: row;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+}
+.boxe:hover .dolar{
+    display: none;
 }
