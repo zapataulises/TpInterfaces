@@ -127,10 +127,10 @@ footer li{
 }
 /*Carrusel Recomendados*/
 .carrusel{
-    margin: 25px;
-    padding-left: 99px;
+    margin-left: 25px;
+    padding-left: 25px;
     position: relative;
-    width: 90%;
+    width: auto;
     height: 10%;
     overflow-x: scroll;
 
@@ -170,6 +170,9 @@ footer li{
 .boxe:hover .jugar{
     display: block;
     position: absolute;
+    background-color: grey;
+    color: yellow;
+    align-content: center;
     top: 85%;
     width: 90px;
     height: 90px;
