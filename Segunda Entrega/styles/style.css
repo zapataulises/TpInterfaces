@@ -4,6 +4,9 @@
 body{
     background-color: #1F1250;
 }
+section{
+    color: white;
+  }
 
 /*Header*/
 .icon{
