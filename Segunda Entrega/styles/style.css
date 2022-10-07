@@ -214,6 +214,7 @@ footer li{
     position: absolute;
     z-index: 1;
 }
+/*
 .wrap {
     height: 100%;
     display: flex;
@@ -285,3 +286,4 @@ footer li{
     animation: none;
     display: none;
   }
+  */
