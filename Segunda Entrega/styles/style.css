@@ -133,49 +133,41 @@ footer li{
 }
 /*Carrusel*/
 .carrusel{
-    margin-left: 25px;
-padding-block: 13px;
-    padding-left: 25px;
-    position: relative;
-    width: auto;
-    height: auto;
-    overflow-x: scroll;
+    padding-block: 13px;
+ 
 
 }
-.carrusel.portada{
+.carrusel .portada{
     width: auto;
+    margin-left: 10px;
+    overflow-y: hidden;
+    overflow-x: scroll;
 }
 .juegos{
-    display: flexbox;
-    width: 100%;
-    height: 100%;
-    scroll-snap-align: center;
+    width: 150px;
+    height: 200px;
+    display: flex;
 }
 .juegos-p{
-    display: flexbox;
-    width: 100%;
-    height: 100%;
-    scroll-snap-align: center;
+    display: flex;
+    width: 150px;
+    height: 200px;
     filter: opacity(0.7);
 }
 
 .portada{
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 20px;
-    padding-left: 4em;
 }
 .jugar{
     display: none;
 }
 
-.boxe,.free{
+.boxe{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 200px;
 }
 
 .boxe:hover .juegos{
