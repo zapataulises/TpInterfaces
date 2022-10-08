@@ -134,25 +134,37 @@ footer li{
     display: flex;
     justify-content: space-around;
 }
-.redes img{
+.redes a img{
+    width: 3.5em;
+    height: 3.5em;
+    padding-block: 0.5em;
+}
+.twitter{
+    background: radial-gradient(50% 50% at 50% 50%, #8DDFFF 0%, #00ACEE 100%);
+}
+.instagram{
+    background: radial-gradient(50% 50% at 50% 50%, #FB96B8 0%, #E1306C 100%); 
+}
+.instagram, .twitter{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     width: 15em;
+    border-radius: 60px;
+    text-decoration: none;
+    color: white;
 }
 
 /*Carrusel*/
-.carrusel{
-    padding-block: 1px;
- 
-
-}
 .carrusel .portada{
     width: auto;
-    margin-left: 10px;
     overflow-y: hidden;
     overflow-x: scroll;
     display: flex;
     align-items: center;
     gap: 20px;
     padding-top: 10px;
+    padding-left: 10px;
     padding-bottom: 10px;
 }
 .juegos{
@@ -165,7 +177,7 @@ footer li{
     filter: opacity(0.7);
 }
 
-.jugar{
+.jugar, .comprar{
     display: none;
 }
 
@@ -180,23 +192,34 @@ footer li{
     width: min-content;
 }
 
-.boxe:hover .juegos{
+.boxe:hover .juegos,.boxe:hover .juegos-p{
     transform: scale(1.09);
     filter: blur(1px);
 
 }
 
-.boxe:hover .jugar{
-    display: block;
-    background-color: grey;
-    color: yellow;
+.boxe:hover .jugar, .boxe:hover .comprar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 109%;
+    height: 16%;
+    background: #F2DC40;
+    color: black;
     position: fixed;
-    bottom: 0%;
-    padding: 0%;
+    bottom: -4%;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
     margin: 0%;
 }
-.free .dolar{
-    display: none;
+.boxe:hover .jugar{
+    background: #F2DC40;
+}
+.boxe:hover .comprar{
+    background: #00FF0A;
+}
+.quitar{
+    background-color: #F54D4D;;
 }
 .dolar{
     position: fixed;

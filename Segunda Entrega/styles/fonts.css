@@ -2,10 +2,16 @@
     font-family: 'Galindo';
 }
 .p2{
-font-style: normal;
-font-weight: 400;
-line-height: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
 }
+.jugar, .comprar{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
 
 .contact a{
     font-family: Arial, Helvetica, sans-serif;
