@@ -1,7 +1,8 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", function () {
     var pantalla = document.querySelector("canvas");
-    var pincel = pantalla.getContext("2d");        
+    var pincel = pantalla.getContext("2d"); 
+    pincel.clearRect(0,0,600,400);       
     
     function diseniarCircunferencia(x,y,radio){
         pincel.fillStyle = "blue";
@@ -15,12 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
     
     function actualizarPantalla(){
     
-        limpiarPantalla();
         diseniarCircunferencia(x,20,10);
         x++;
     }
-    
-    setInterval(actualizarPantalla,(10/1.1123));
+    setInterval(actualizarPantalla,16);
     
 
     setTimeout(function carga(params) {

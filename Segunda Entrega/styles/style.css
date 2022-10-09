@@ -24,6 +24,10 @@ section{
 #cargaLogo{
     width: 10em;
 }
+.cargabarra{
+    width: "600";
+    height: "200";
+}
 .canvabox{
     background-color: white;
     height: 30px;
