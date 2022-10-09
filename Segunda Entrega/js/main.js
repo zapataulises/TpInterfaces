@@ -2,7 +2,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     var pantalla = document.querySelector("canvas");
     var pincel = pantalla.getContext("2d");        
-    pincel.fillStyle = "lightgrey";
     
     function disenharCircunferencia(x,y,radio){
         pincel.fillStyle = "blue";
