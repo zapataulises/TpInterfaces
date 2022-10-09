@@ -18,7 +18,10 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 15%;
+    padding-top: 10%;
+}
+#cargaLogo{
+    width: 10em;
 }
 .completado{
     display: none !important;
