@@ -110,28 +110,13 @@ button{
 
 
 /*Footer*/
+
 footer{
     background-color: #120B2A;
     margin: 0%;
     color: white;
     width: 100%;
     bottom: 0;
-}
-footer h1{
- padding-left: 1em;
- padding-bottom: 0.5em;
-
-}
-footer li{
-    justify-content: space-around;
-    font-size: 1em;
-    padding-bottom: 1em;  
-    list-style: none;
-}
-.container{
-    display: flex;
-    justify-content: space-between;
-    padding-inline: 2em;
 }
 .copyright{
     background-color: #080416;
@@ -145,8 +130,8 @@ footer li{
     justify-content: space-around;
 }
 .redes a img{
-    width: 3.5em;
-    height: 3.5em;
+    width: 2.5em;
+    height: 2.5em;
     padding-block: 0.5em;
 }
 .twitter{
@@ -164,7 +149,30 @@ footer li{
     text-decoration: none;
     color: white;
 }
+@media (min-width: 375px){
+    .redes a img{
+        width: 3.5em;
+    height: 3.5em;
+    }
+}
+@media (min-width: 769px){
 
+footer h1{
+ padding-left: 1em;
+ padding-bottom: 0.5em;
+
+}
+footer li{
+    justify-content: space-around;
+    font-size: 1em;
+    padding-bottom: 1em;  
+    list-style: none;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2em;
+}}
 /*Carrusel*/
 .carrusel .portada{
     width: auto;
@@ -241,9 +249,12 @@ footer li{
     display: none;
 }
 /*Hero*/
+
 .hero-container{
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 450px;
+    height: 100%;
 }
 
 .hero{
@@ -256,6 +267,16 @@ footer li{
     position: absolute;
     z-index: 1;
 }
+@media (min-width: 769px){
+   .hero-container{
+    height: 45%;}
+
+    .hero{
+        width: 95%;
+        height: 450px;
+    }
+}
+
 /*
 .wrap {
     height: 100%;
