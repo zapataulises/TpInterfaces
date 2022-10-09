@@ -15,8 +15,10 @@ section{
 /*Animacion Load*/
 #carga{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 11%
+    align-items: center;
+    padding-top: 15%;
 }
 .completado{
     display: none !important;
