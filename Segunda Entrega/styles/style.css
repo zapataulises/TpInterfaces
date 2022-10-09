@@ -30,7 +30,8 @@ section{
 }
 .canvabox{
     background-color: white;
-    height: 30px;
+    height: 20px;
+    border-radius: 12px;
 }
 .completado{
     display: none !important;

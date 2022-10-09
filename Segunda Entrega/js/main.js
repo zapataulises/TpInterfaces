@@ -1,13 +1,12 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", function () {
     var pantalla = document.querySelector("canvas");
-    var pincel = pantalla.getContext("2d"); 
-    pincel.clearRect(0,0,600,400);       
+    var pincel = pantalla.getContext("2d");        
     
-    function diseniarCircunferencia(x,y,radio){
+    function disenharCircunferencia(x,y,radio){
         pincel.fillStyle = "blue";
         pincel.beginPath();
-        pincel.arc(x,y,radio,0,2*Math.PI);
+        pincel.arc(x+10,y,radio,0,2*Math.PI);
         pincel.fill();
     }    
     
@@ -15,11 +14,17 @@ document.addEventListener("DOMContentLoaded", function () {
     var x = 0
     
     function actualizarPantalla(){
-    
-        diseniarCircunferencia(x,20,10);
-        x++;
+        
+        disenharCircunferencia(x,10,10);
+        if (x<280) {
+           x++; 
+        }
+        
     }
-    setInterval(actualizarPantalla,16);
+    
+        setInterval(actualizarPantalla,10);
+    
+    
     
 
     setTimeout(function carga(params) {
