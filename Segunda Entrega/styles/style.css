@@ -13,8 +13,13 @@ section{
   }
 
 /*Animacion Load*/
+#carga{
+    display: flex;
+    justify-content: center;
+    padding: 11%
+}
 .completado{
-    display: none;
+    display: none !important;
 }
 /*Header*/
 .icon{
