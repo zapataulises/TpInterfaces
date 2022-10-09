@@ -267,6 +267,10 @@ footer li{
     position: absolute;
     z-index: 1;
 }
+.hero-page{
+    width: 100%;
+    height: 100%;
+}
 @media (min-width: 769px){
    .hero-container{
     height: 45%;}
@@ -274,6 +278,10 @@ footer li{
     .hero{
         width: 95%;
         height: 450px;
+    }
+    .hero-page{
+        width: 100%;
+        height: 100%;
     }
 }
 
