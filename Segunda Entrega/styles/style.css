@@ -454,4 +454,24 @@ form {
 
 .estre{
     color: gold;
-    padding-left: 25px;}
+    padding-left: 25px;
+}
+
+/*Launch*/
+.description{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    background-image: url("img/espacio.jpg");
+
+}
+.historia{
+    margin: 60px;
+}
+.description img{
+    width: 60%;
+}
+
