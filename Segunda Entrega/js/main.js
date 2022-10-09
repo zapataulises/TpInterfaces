@@ -1,7 +1,14 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", function () {
-    let home= document.querySelector("#home");
-    let carga= document.querySelector("#carga");
+    
+
+    setTimeout(function carga(params) {
+        let home= document.querySelector("#home");
+        let carga= document.querySelector("#carga");
+
+        home.classList.remove("completado");
+        carga.classList.add("completado");
+    },5000);
     
 
 
