@@ -1,8 +1,9 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", function () {
- let added=0;
  
+    
   document.querySelectorAll(".comprar").forEach(function (element) {
+    let added=0;
     element.addEventListener("click", function (){
     if (added==0) {
         element.innerHTML="Quitar del <br> Carrito";
