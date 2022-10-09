@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     pincel.fillStyle = "lightgrey";
     pincel.fillRect(0,0,600,400); 
     
-    function disenharCircunferencia(x,y,radio){
+    function diseniarCircunferencia(x,y,radio){
         pincel.fillStyle = "blue";
         pincel.beginPath();
         pincel.arc(x,y,radio,0,2*Math.PI);
@@ -21,11 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
     function actualizarPantalla(){
     
         limpiarPantalla();
-        disenharCircunferencia(x,20,10);
+        diseniarCircunferencia(x,20,10);
         x++;
     }
     
-    setInterval(actualizarPantalla,20);
+    setInterval(actualizarPantalla,(10/1.1123));
     
 
     setTimeout(function carga(params) {

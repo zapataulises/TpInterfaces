@@ -20,6 +20,10 @@ section{
     align-items: center;
     padding-top: 15%;
 }
+.canvabox{
+    background-color: white;
+    height: 30px;
+}
 .completado{
     display: none !important;
 }
