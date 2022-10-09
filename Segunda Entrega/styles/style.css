@@ -236,7 +236,7 @@ footer li{
 .boxe:hover .comprar{
     background: #00FF0A;
 }
-.quitar{
+.boxe:hover .quitar{
     background-color: #F54D4D;;
 }
 .dolar{
