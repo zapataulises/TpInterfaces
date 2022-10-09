@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
     var pantalla = document.querySelector("canvas");
     var pincel = pantalla.getContext("2d");        
     pincel.fillStyle = "lightgrey";
-    pincel.fillRect(0,0,600,400); 
     
     function disenharCircunferencia(x,y,radio){
         pincel.fillStyle = "blue";
@@ -12,20 +11,16 @@ document.addEventListener("DOMContentLoaded", function () {
         pincel.fill();
     }    
     
-    function limpiarPantalla(){
-        pincel.clearRect(0,0,600,400);
-    }
     
     var x = 0
     
     function actualizarPantalla(){
     
-        limpiarPantalla();
         disenharCircunferencia(x,20,10);
         x++;
     }
-    
-    setInterval(actualizarPantalla,20);
+
+    setInterval(actualizarPantalla,15);
     
 
     setTimeout(function carga(params) {
