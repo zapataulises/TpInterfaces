@@ -1,6 +1,7 @@
 *{
     margin: 0;
 }
+
 html {
     scroll-behavior: smooth;
   }
@@ -11,6 +12,10 @@ section{
     color: white;
   }
 
+/*Animacion Load*/
+.completado{
+    display: none;
+}
 /*Header*/
 .icon{
     width: 5.2em;

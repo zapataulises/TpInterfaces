@@ -1,7 +1,11 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", function () {
- 
+    let home= document.querySelector("#home");
+    let carga= document.querySelector("#carga");
     
+
+
+    //Botones//
   document.querySelectorAll(".comprar").forEach(function (element) {
     let added=0;
     element.addEventListener("click", function (){
