@@ -18,7 +18,11 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 15%;
+    padding-top: 10%;
+    color: white;
+}
+#cargaLogo{
+    width: 10em;
 }
 .canvabox{
     background-color: white;
