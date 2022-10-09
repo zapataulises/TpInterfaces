@@ -36,10 +36,10 @@ button{
     background: none;
     border: none;
 }
-.botonaso{
+.boton{
     transition: transform 0.5s;
 }
-.botonaso:hover{
+.boton:hover{
     transform: scale3d(1.3, 1.3, 1.3);
 }
 
