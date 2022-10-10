@@ -553,3 +553,40 @@ form {
     width: 60%;
 }
 
+/*Habilidades*/
+.habi{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 75%;
+}
+
+ul, li{
+    padding: 0;
+    margin: 0;
+    list-style: none-inside;
+}
+ul.slider img{
+    opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+    background: white;
+    width: 50%;
+    height: 50%;
+}
+ul.slider img:first-child{
+    opacity: 1;
+}
+ul.slider img:target{
+    opacity: 1;
+}
+.habilidades{
+    margin: 90px;
+}
+.hab{
+    justify-content: center;
+    align-items: center;
+}
+.hab li{
+    display: inline;
+}
