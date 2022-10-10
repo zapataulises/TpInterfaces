@@ -535,6 +535,11 @@ form {
     padding-left: 25px;
 }
 
+.comment-date{
+    text-align: right;
+    margin-left: 20px;
+}
+
 /*Launch*/
 .description{
     width: 100%;
