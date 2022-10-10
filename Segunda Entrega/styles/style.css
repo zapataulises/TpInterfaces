@@ -4,7 +4,6 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-snap-align: start;
   }
 body{
     background-color: #1F1250;
@@ -588,6 +587,8 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 3em;
+    
 }
 .slider img{
     opacity: 0;
@@ -597,10 +598,10 @@ form {
 }
 .slider img:first-child{
     opacity: 1;
-    width: 90%;
+    width: 70%;
 }
 .slider img:target{
-    width: 90%;
+    width: 70%;
     opacity: 1;
 }
 .menu{
