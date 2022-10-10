@@ -566,7 +566,7 @@ form {
     justify-content: flex-start;
     align-items: center;
     height: 380px;
-    margin-bottom: 1em;
+    padding-bottom: 1em;
 }
 
 .menu li{
@@ -603,4 +603,9 @@ form {
     justify-content: center;
     align-items: center;
     
+}
+.lanzamiento{
+    background-image: url(../img/espacio.jpg);
+    background-position-x: center;
+    background-size: cover;
 }
