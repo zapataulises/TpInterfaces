@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var pantalla = document.querySelector("canvas");
     var pincel = pantalla.getContext("2d");        
     
-    function disenharCircunferencia(x,y,radio){
+    function diseniarCircunferencia(x,y,radio){
         pincel.fillStyle = "blue";
         pincel.beginPath();
         pincel.arc(x+10,y,radio,0,2*Math.PI);
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     function actualizarPantalla(){
         
-        disenharCircunferencia(x,10,10);
+        diseniarCircunferencia(x,10,10);
         if (x<280) {
            x++; 
         }
