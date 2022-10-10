@@ -650,6 +650,8 @@ form {
 .carrusel-pj .portada-pj{
     width: auto;
     display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
     align-items: center;
     gap: 20px;
     padding-top: 10px;
