@@ -542,7 +542,6 @@ form {
 
 /*Launch*/
 .description{
-    width: 100%;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -590,16 +589,13 @@ form {
 }
 .slider img:first-child{
     opacity: 1;
-    height: 50%;
-    width: 50%;
+    height: 90%;
+    width: 90%;
 }
 .slider img:target{
-    width: 50%;
-    height: 50%;
+    height: 90%;
+    width: 90%;
     opacity: 1;
-}
-.habilidades{
-    margin: 90px;
 }
 .menu{
     display: flex;
