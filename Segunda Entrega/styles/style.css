@@ -4,6 +4,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-snap-align: start;
   }
 body{
     background-color: #1F1250;
@@ -552,6 +553,10 @@ form {
 }
 .historia{
     margin: 60px;
+}
+.bread p a{
+    color: white;
+    text-decoration: none;
 }
 .biri{
     width: 40%;
