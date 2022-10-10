@@ -280,7 +280,9 @@ footer li{
 .boxe:hover .precio{
     display: flex;
     position: fixed;
-    padding: 0.2em;
+    right: -4%;
+    bottom: 15%;
+    padding: 0.3em;
    background-color: #4CAF50;
    border-radius: 10px;
     z-index: 1;
