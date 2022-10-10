@@ -440,7 +440,7 @@ footer li{
 .game-title{
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding: 40px 40px 20px 40px;
 }
 .titulo{
     font-size: 3em;
@@ -476,6 +476,47 @@ footer li{
     padding: 5px;
     font-size: 20px;
 }
+
+/*Compartir*/
+
+.compartir{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.share{
+    width: 25px;
+    height: 25px;
+}
+.link{
+    margin-left: 10px;
+    width: 45px;
+    height: 45px;
+}
+.link:hover{
+    transform: scale(1.09);
+}
+.compartir h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+.links{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
 
 /*Comentarios*/
 .titlecomments{
