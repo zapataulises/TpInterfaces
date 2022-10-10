@@ -274,6 +274,17 @@ footer li{
 .boxe:hover .dolar{
     display: none;
 }
+.precio{
+    display: none;
+}
+.boxe:hover .precio{
+    display: flex;
+    position: fixed;
+    padding: 0.2em;
+   background-color: #4CAF50;
+   border-radius: 10px;
+    z-index: 1;
+}
 /*Hero*/
 
 .hero-container{
