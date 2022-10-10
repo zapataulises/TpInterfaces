@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         home.classList.remove("completado");
         carga.classList.add("completado");
         
-    },5000);
+    },/*5000*/);
     
 
 
