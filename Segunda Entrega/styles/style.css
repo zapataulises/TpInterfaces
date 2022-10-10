@@ -11,6 +11,34 @@ body{
 section{
     color: white;
   }
+.bur{
+    list-style: none;
+    justify-content: flex-start;
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 50px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #3cbbb05b;
+}
+li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li{
+    padding-left: 0%;
+    justify-content: center;
+    margin: 15px 0 0 0;
+}
+.menu-vertical li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+
+}
 
 /*Animacion Load*/
 #carga{
