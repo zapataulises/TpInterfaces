@@ -13,15 +13,23 @@
 <body>
     <header class="navbar">
         <a href="index.html"><img src="img/icon.png" alt="Logo GodJuegos" class="icon"></a>
-        <button class="boton">
-            <img src="img/userLogo.png" alt="userlogo" class="userlogo">
-        </button>
+        <div class="menuBurger">
+            <img src="img/userLogo.png" alt="userlogo" class="userlogo boton" id="burger">
+            <ul id="menuVertical" class="menu-off">
+                <li class="user"><img src="img/User Logo (1).png" alt="userlogo"> GodJuegosAdmin</li>
+                <li><a href="#">Cuenta<img src="img/cuenta.png" alt=""></a></li>
+                <li><a href="#">Ayuda<img src="img/ayuda.png" alt=""></a></li>
+                <li><a href="#">Contacto <img src="img/contacto.png" alt=""></a></li>
+                <li><a href="#">Configuracion <img src="img/config.png" alt=""></a></li>
+                <li class="redMenu"><a href="http://instagram.com"><img src="img/igmenu.png" alt=""></a> <a href="http://twitter.com"><img src="img/twMenu.png" alt=""></a></li>
+            </ul>
+        </div>
     </header>
     <section class="breadcrumbs">
         <div class="bread">
-            <p>GodJuegos ></p>
-            <p>Casuales ></p>
-            <p>Cuatro en linea: Goku vs Freezer </p>
+            <p><a href="index.html">GodJuegos</a>  ></p>
+            <p><a href="index.html#casuales">Casuales</a> ></p>
+            <p><a href="game.html">Cuatro en linea: Goku vs Freezer</a> </p>
         </div>
     </section>
     <section class="title">
@@ -197,6 +205,6 @@
             <p>&#169; 2022 GodJuegos . Digital Company</p>
         </div>
     </footer>
-    
+    <script src="js/burger.js"></script>
 </body>
 </html>
