@@ -18,6 +18,7 @@ section{
     align-items: center;
     position: relative;
     width:auto;
+
 }
 .menu-off{
     display:none
@@ -36,9 +37,10 @@ section{
     align-items: flex-end;
     justify-content: space-around;
     background: radial-gradient(50% 50% at 50% 50%, #8745DD 19.27%, #3D0D75 100%);
-    padding: 2em;
+    padding-right: 1em;
     gap: 10px;
     z-index: 1;
+    padding-bottom: 1em;
 }
 .redMenu{
     align-self: center;
@@ -59,12 +61,11 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1em;
-    padding-inline: 2em;
+    padding-right: 10px;
     
 }
 .user img{
-    width: 4em;
+    width: 3em;
 }
 
 
