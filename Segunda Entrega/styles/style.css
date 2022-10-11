@@ -358,116 +358,8 @@ footer li{
 .categoria{
     padding-left: 1em;
 }
-/*Hero*/
 
-.hero-container{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
 
-.hero{
-    width: 100%;
-    height: 100%;
-}
-.heroh{
-    display: flex;
-    flex-flow: row;
-    position: absolute;
-    z-index: 1;
-}
-.hero-page{
-    width: 100%;
-    height: 100%;
-}
-@media (min-width: 769px){
-   .hero-container{
-    height: 45%;}
-
-    .hero{
-        width: 95%;
-        height: 450px;
-    }
-    .hero-page{
-        width: 100%;
-        height: 100%;
-    }
-}
-
-/*
-.wrap {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-  }
-  
-  .button {
-    min-width: 300px;
-    min-height: 60px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 22px;
-    text-transform: uppercase;
-    letter-spacing: 1.3px;
-    font-weight: 700;
-    color: #313133;
-    background: #4FD1C5;
-  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
-    border: none;
-    border-radius: 1000px;
-    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
-    transition: all 0.3s ease-in-out 0s;
-    cursor: pointer;
-    outline: none;
-    position: relative;
-    padding: 10px;
-    display: inline-block;
-    }
-  
-  button::before {
-  content: '';
-    border-radius: 1000px;
-    min-width: calc(300px + 12px);
-    min-height: calc(60px + 12px);
-    border: 6px solid #00FFCB;
-    box-shadow: 0 0 60px rgba(0,255,203,.64);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: all .3s ease-in-out 0s;
-  }
-  
-  .button:hover, .button:focus {
-    color: #313133;
-    transform: translateY(-6px);
-  }
-  
-  button:hover::before, button:focus::before {
-    opacity: 1;
-  }
-  
-  button::after {
-    content: '';
-    width: 30px; height: 30px;
-    border-radius: 100%;
-    border: 6px solid #00FFCB;
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: ring 1.5s infinite;
-  }
-  
-  button:hover::after, button:focus::after {
-    animation: none;
-    display: none;
-  }
-  */
 
   /* Cuatro en linea*/
 .bread {
@@ -651,25 +543,113 @@ form {
     margin-left: 20px;
 }
 
-/*Launch*/
-.description{
+
+/*Hero*/
+
+.hero-container{
+    display: flex;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+}
+.heroh{
+    display: flex;
+    flex-flow: row;
+    position: absolute;
+    z-index: 1;
+}
+.hero-page{
+    width: 100%;
+    height: 100%;
+}
+@media (min-width: 769px){
+   .hero-container{
+    height: 45%;}
+
+    .hero{
+        width: 95%;
+        height: 450px;
+    }
+    .hero-page{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+
+
+/*Launch*/
+.heroname{
+    display: flex;
+    position: absolute;
+    bottom: 75%;
+    z-index: 1;
+    color: #000000;
+    text-shadow: 0px 0px 20px #F2DC40;
+}
+.herocome{
+    display: flex;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    z-index: 1;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 15px #000000;
+}
+.herobutton{
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+    z-index: 1;
+    background: #E2C811;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 45px;
+    padding-inline: 10px;
+}
+
+.description{
+    
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 20px;
     
 
 }
 .historia{
-    margin: 60px;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 1em;
 }
 .bread p a{
     color: white;
     text-decoration: none;
 }
-.biri{
-    width: 40%;
+.cosmeLogo{
+    width: 25%;
+}
+.mundos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+}
+.cosmereimg{
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);;
+}
+.mundosimg{
+    padding: 1em;
+    width: 50%;
 }
 
 /*Habilidades*/
@@ -736,6 +716,10 @@ form {
     transform: scale3d(1.3, 1.3, 1.3);
 }
 
+
+
+/*Personajes*/
+
 .personajes{
     width: auto;
     display: flex;
@@ -761,6 +745,15 @@ form {
     padding-left: 10px;
     padding-bottom: 10px;
 }
+.portada-pj::-webkit-scrollbar{
+    height: 10px;
+}
+.portada-pj::-webkit-scrollbar-track {
+    background-color: #190F41;
+  }
+  .portada-pj::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 10px rgb(174, 88, 201);
+  }
 
 .personaje{
     display: flex;
