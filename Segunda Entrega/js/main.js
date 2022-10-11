@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
     }
     
-        setInterval(actualizarPantalla,10);
+        setInterval(actualizarPantalla,17);
     
     
     
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         home.classList.remove("completado");
         carga.classList.add("completado");
         
-    },/*5000*/);
+    },5000);
     
 
 
@@ -55,6 +55,14 @@ document.addEventListener("DOMContentLoaded", function () {
     
 })
 })
+
+
+    
+
+    
+    
+
+
 
 });
 
