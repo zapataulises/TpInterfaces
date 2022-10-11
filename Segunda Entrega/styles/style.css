@@ -10,35 +10,66 @@ body{
 }
 section{
     color: white;
-  }
-.bur{
-    list-style: none;
-    justify-content: flex-start;
 }
-.menu-vertical{
+.fondo{
+}
+.menuBurger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width:auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: cover;
+}
+.menu-off{
+    display:none
+}
+.menu-on{
+    display: flex;
+}
+#menuVertical{
+    align-self: flex-end;
     position: absolute;
-    display: none;
     list-style: none;
-    width: 50px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    background-color: #3cbbb05b;
+    width:auto;
+    right: -50%;
+    top: 120%;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    background: radial-gradient(50% 50% at 50% 50%, #8745DD 19.27%, #3D0D75 100%);
+    padding: 2em;
+    gap: 10px;
+    z-index: 1;
 }
-li:hover .menu-vertical{
-    display: block;
+.redMenu{
+    align-self: center;
+    display: flex;
+    gap: 20px;
 }
-.menu-vertical li{
-    padding-left: 0%;
-    justify-content: center;
-    margin: 15px 0 0 0;
-}
-.menu-vertical li a{
-    display: block;
+#menuVertical li a{
+    display: flex;
+    align-items: center;
     color: white;
     text-decoration: none;
-    width: 100%;
-
 }
+#menuVertical li a img{
+    width: 1,5em;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    padding-inline: 2em;
+    
+}
+.user img{
+    width: 4em;
+}
+
 
 /*Animacion Load*/
 #carga{
