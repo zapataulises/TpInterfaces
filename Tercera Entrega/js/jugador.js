@@ -2,10 +2,12 @@
 
 class Jugador {
     
-    constructor(nombre){
-        
+    constructor(nombre, img){    
         this.nombre = nombre;
         this.turno = false;
+        this.img= img;
     }
+
+    
 
 }
