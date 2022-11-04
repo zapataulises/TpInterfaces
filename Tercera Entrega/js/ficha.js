@@ -2,13 +2,13 @@
 
 class Ficha  {
     
-    constructor(x,y,jugador,seleccionada){
+    constructor(x,y,jugador){
         this.posx= x;
         this.posy= y;
         this.startx= x;
         this.starty= y;
         this.jugador= jugador;
-        this.seleccionada= seleccionada;
+        this.seleccionada= false;
         this.diametro=50;
         this.enTablero=false;
         this.turno = false;
@@ -24,10 +24,10 @@ class Ficha  {
         return this.posy;
     }
 
-    draw(){
+    draw(ctx){
         let img= this.jugador.img
-        x = this.posx;
-        y = this.posy;
+        let x = this.posx;
+        let y = this.posy;
         ctx.drawImage(img, x, y, this.diametro, this.diametro);
     }
 
