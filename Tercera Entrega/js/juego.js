@@ -31,6 +31,7 @@ function contrareloj(){
     }
 }
 
+
 //Iniciar segun la opcion
 
 btn_modo.forEach(btn => {
@@ -47,16 +48,24 @@ btn_modo.forEach(btn => {
         casilleros=[];
         tablero= new Tablero(canvas, ctx, casilleros, modo);
         tablero.crearTablero();
-        tablero.draw();
+        tablero.draw(true);
         genFichas(modo);
         dibujarFichas();
+        eventos();
 
         timer=180;
-        setInterval(contrareloj, 1000)
+        //setInterval(contrareloj, 1000)
         
 
     })
 });
+
+function recarga() {
+    ctx.clearRect(0,0, canvas.width, canvas.height);
+    //fondo
+    tablero.draw();
+    dibujarFichas();
+}
 
 function genFichas(modo){
 
@@ -114,7 +123,42 @@ function genFichas(modo){
 function dibujarFichas() {
     fichasj1.forEach(e=>e.draw(ctx));
     fichasj2.forEach(e=>e.draw(ctx));
- }
+}
    
-    
+//eventos
+
+function eventos() {
+    canvas.addEventListener("mousedown", (e)=>{
+        mouseDown(e)
+    })
+    canvas.addEventListener("mousemove", (e)=>{
+        mouseMove(e)
+    })
+    canvas.addEventListener("mouseup", (e)=>{
+        mouseUp();
+    })
+
+}
+
+function mouseDown(e) {
+    let x = e.pageX-canvas.offsetLeft;
+    let y = e.pageY-canvas.offsetTop;
+    if (turnoDe==jugador1) {
+        fichasj1.forEach(f=>f.select(x,y));
+    }else{
+        fichasj2.forEach(f=>f.select(x,y));
+
+    }
+}
+function mouseMove(e) {
+    let x = e.pageX-canvas.offsetLeft;
+    let y = e.pageY-canvas.offsetTop;
+    fichasj1.forEach(f=>f.moverPos(x,y));
+    fichasj2.forEach(f=>f.moverPos(x,y));
+    recarga();
+}
+function mouseUp() {
+   fichasj1.forEach(f=>tablero.colocar(f));
+   fichasj2.forEach(f=>tablero.colocar(f)); 
+}
     

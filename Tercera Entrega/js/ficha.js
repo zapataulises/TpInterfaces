@@ -32,15 +32,15 @@ class Ficha  {
     }
 
 
-    verificarSelect(x,y){
-        if(!this.seleccionada && (x>this.x && x< this.x+this.diametro && y> this.y && y<this.y + this.diametro)){
+    select(xM,yM){
+        if(!this.seleccionada && xM>this.posx && xM< this.posx+this.diametro && yM> this.posy && yM<this.posy + this.diametro){
             this.seleccionada = true;
         }    
     }
 
     moverPos(x,y){
         if(this.seleccionada && !this.enTablero){
-            this.posx= x-this.diametro/2;
+            this.posx= x-(22);
             this.posy= y-this.diametro/2;
         }
     }

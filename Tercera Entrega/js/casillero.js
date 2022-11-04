@@ -13,16 +13,20 @@ class Casillero{
         
     }
 
-    draw(){
+    draw(carga){
         let ctx=this.ctx;
         let x=this.x;
         let y=this.y;
         let img=this.img;
 
-        
+        if (carga) {
             this.img.onload = function (){
                 ctx.drawImage(img,x,y,50,50);
             }
+        }else{
+            ctx.drawImage(img,x,y,50,50);
+        }
+            
             
         
     }

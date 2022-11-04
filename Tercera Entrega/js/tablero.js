@@ -41,16 +41,19 @@ class Tablero{
     }
     }
    
-    draw() {
+    draw(carga) {
         //La fila 0 no se dibuja para usarla de tirada
         for (let i = this.modo+2; i > 0; i--) {
            for(let j= this.modo+2; j>=0; j--){
-                    this.casilleros[i][j].draw()
+                    this.casilleros[i][j].draw(carga)
             }
                 
         }
     }
 
+    colocar(f){
+        
+    }
     
 
 }
