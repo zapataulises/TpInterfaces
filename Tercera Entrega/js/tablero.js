@@ -1,40 +1,58 @@
 "use strict"
 
 class Tablero{
-   constructor(canvas, ctx, casillero, ocupado){
+   constructor(canvas, ctx, casilleros, modo){
     this.canvas = canvas;
     this.ctx = ctx;
-    this.casillero = casillero;
-    this.ocupado = ocupado;
+    this.casilleros = casilleros;
+    this.modo= modo;
    }
    
-   crearTablero(cantFilas){
+   crearTablero(){
+    let img= new Image();
+    img.src="./img/4casillero.png"
     let xInicial;
     let yInicial;
-    if(cantFilas ==5){
-        xInicial = 280;
-        yInicial = 200;
+    switch(this.modo){
+        case 4:
+            xInicial = 425;
+            yInicial = 120;
+        break;
+        case 5:
+            xInicial = 400;
+            yInicial = 120;
+        break;
+        case 6:  
+            xInicial = 375;
+            yInicial = 120;
+        break;
+        case 7:
+            xInicial = 350;
+            yInicial = 120;
+        break;
     }
-    else if(cantFilas ==6){
-        xInicial = 250;
-        yInicial = 200;
-    }
-    else if(cantFilas == 7){
-        xInicial = 230;
-        yInicial = 200;
-    }
-    else if(cantFilas == 8){
-        xInicial = 205;
-        yInicial = 200;
-    }
-    
-    for (let i = cantFilas; i > -1; i--) {
-        this.casillero[i] = [];
-        for(let j= cantFilas+1; j>=0; j--){
-            let y =yInicial + j*50;
-            le ty 
+    for (let i = this.modo+1; i >= 0; i--) {
+        this.casilleros[i] = [];
+       for(let j= this.modo+2; j>=0; j--){
+            let y =yInicial + i*50;
+            let x =xInicial +j*50;
+            this.casilleros[i][j]=new Casillero(x, y,img, ctx);
         }
-        
     }
     }
-   }
+   
+    draw() {
+        for (let i = this.modo+1; i >= 0; i--) {
+           for(let j= this.modo+2; j>=0; j--){
+                    this.casilleros[i][j].draw()
+            }
+                
+        }
+    }
+
+    
+
+}
+
+
+

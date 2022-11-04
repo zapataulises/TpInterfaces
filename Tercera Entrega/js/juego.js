@@ -21,6 +21,7 @@ let fichasj2;
 let turnoDe;
 let modo;
 let tablero;
+let casilleros;
 //Temporizador
 let timer= 180;
 function contrareloj(){
@@ -44,8 +45,10 @@ btn_modo.forEach(btn => {
         fichasj1=[];
         fichasj2=[];
         genFichas(modo);
-        console.log(fichasj1)
-        tablero= new Tablero(canvas, ctx, modo);
+        casilleros=[];
+        tablero= new Tablero(canvas, ctx, casilleros, modo);
+        tablero.crearTablero();
+        tablero.draw(0);
         dibujarFichas();
         
 
@@ -55,7 +58,7 @@ btn_modo.forEach(btn => {
 
 function genFichas(modo){
 
-    let totalCu=((modo+2)*(modo+2))/2
+    let totalCu=((modo+2)*(modo+3))/2
     for (let i = 0; i < totalCu; i++) {
         let x;
         let y;
@@ -70,9 +73,13 @@ function genFichas(modo){
         }else if(i<33){
            x = 115;
            y = (i-22) * 50 + 80;
-        }else{
+        }else if(i<44){
            x = 165;
            y = (i-33) * 50 + 80;
+        }
+        else{
+            x = 215;
+            y = (i-39) * 50 + 80;
         }
         fichasj1[i]= new Ficha(x, y, jugador1)
     }
@@ -91,10 +98,14 @@ function genFichas(modo){
         }else if(i<33){
            x = canvas.offsetWidth - 155;
            y = (i-22)*50 + 80;
-        }else{
+        }else if(i<44){
            x = canvas.offsetWidth - 205;
            y = (i-33) * 50 + 80;
         }
+        else {
+            x = canvas.offsetWidth - 255;
+            y = (i-39) * 50 + 80;
+         }
         fichasj2[i]= new Ficha(x, y, jugador2)
     }
 }
