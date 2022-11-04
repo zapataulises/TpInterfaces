@@ -9,8 +9,6 @@ class Tablero{
    }
    
    crearTablero(){
-    let img= new Image();
-    img.src="./img/4casillero.png"
     let xInicial;
     let yInicial;
     switch(this.modo){
@@ -34,6 +32,8 @@ class Tablero{
     for (let i = this.modo+1; i >= 0; i--) {
         this.casilleros[i] = [];
        for(let j= this.modo+2; j>=0; j--){
+        let img= new Image();
+    img.src="./img/4casillero.png"
             let y =yInicial + i*50;
             let x =xInicial +j*50;
             this.casilleros[i][j]=new Casillero(x, y,img, ctx);
