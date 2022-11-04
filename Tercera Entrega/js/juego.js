@@ -23,18 +23,18 @@ let modo;
 let tablero;
 let casilleros;
 //Temporizador
-let timer= 180;
+let timer;
 function contrareloj(){
     if (timer>0) {
         timer--;
-        //actualizar();
+        recarga();
     }
 }
 
 //Iniciar segun la opcion
 
 btn_modo.forEach(btn => {
-    btn.addEventListener("click", async cargarJuego=>{
+    btn.addEventListener("click", cargarJuego=>{
         ctx.clearRect(0,0, canvas.width, canvas.height);
         //fondo
         jugadores.push(jugador1);
@@ -47,9 +47,12 @@ btn_modo.forEach(btn => {
         casilleros=[];
         tablero= new Tablero(canvas, ctx, casilleros, modo);
         tablero.crearTablero();
-        await tablero.draw();
+        tablero.draw();
         genFichas(modo);
         dibujarFichas();
+
+        timer=180;
+        setInterval(contrareloj, 1000)
         
 
     })

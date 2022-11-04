@@ -13,7 +13,7 @@ class Casillero{
         
     }
 
-    draw(carga){
+    draw(){
         let ctx=this.ctx;
         let x=this.x;
         let y=this.y;
