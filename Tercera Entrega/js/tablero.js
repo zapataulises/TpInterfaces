@@ -29,20 +29,21 @@ class Tablero{
             yInicial = 120;
         break;
     }
-    for (let i = this.modo+1; i >= 0; i--) {
+    for (let i = this.modo+2; i >= 0; i--) {
         this.casilleros[i] = [];
        for(let j= this.modo+2; j>=0; j--){
         let img= new Image();
     img.src="./img/4casillero.png"
-            let y =yInicial + i*50;
-            let x =xInicial +j*50;
+            let y =yInicial + (i-1)*50;
+            let x =xInicial + j*50;
             this.casilleros[i][j]=new Casillero(x, y,img, ctx);
         }
     }
     }
    
-    draw() {
-        for (let i = this.modo+1; i >= 0; i--) {
+    async draw() {
+        //La fila 0 no se dibuja para usarla de tirada
+        for (let i = this.modo+2; i > 0; i--) {
            for(let j= this.modo+2; j>=0; j--){
                     this.casilleros[i][j].draw()
             }

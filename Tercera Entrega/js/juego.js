@@ -34,7 +34,7 @@ function contrareloj(){
 //Iniciar segun la opcion
 
 btn_modo.forEach(btn => {
-    btn.addEventListener("click", cargarJuego=>{
+    btn.addEventListener("click", async cargarJuego=>{
         ctx.clearRect(0,0, canvas.width, canvas.height);
         //fondo
         jugadores.push(jugador1);
@@ -44,14 +44,13 @@ btn_modo.forEach(btn => {
         modo= Number(btn.value);
         fichasj1=[];
         fichasj2=[];
-        genFichas(modo);
         casilleros=[];
         tablero= new Tablero(canvas, ctx, casilleros, modo);
         tablero.crearTablero();
-        tablero.draw(0);
+        await tablero.draw();
+        genFichas(modo);
         dibujarFichas();
         
-
 
     })
 });
