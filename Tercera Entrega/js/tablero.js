@@ -52,7 +52,21 @@ class Tablero{
     }
 
     colocar(f){
-        
+        if (!f.enTablero && f.seleccionada) {
+            f.seleccionada=false;
+            let fila=this.casilleros[0];
+            for (let index = 0; index < fila.length; index++) {
+                let element = fila[index];
+                if (f.posx+22>element.x && element.x+45>f.posx+22 && f.posy+22>element.y && element.y+45>f.posy+22) {
+                    f.enTablero=true;
+                    this.encasillar(f, index);
+                    break;
+                }
+                
+            }
+            f.posx=f.startx;
+            f.posy=f.starty;
+        }
     }
     
 

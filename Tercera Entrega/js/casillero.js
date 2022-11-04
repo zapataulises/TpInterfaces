@@ -5,8 +5,6 @@ class Casillero{
         this.x=x;
         this.y=y;
         this.ctx=ctx;
-        this.widht=45;
-        this.height=45;
         this.ocupado=false;
         this.jugadorOcupa;
         this.img= img;
