@@ -9,7 +9,7 @@ class Ficha  {
         this.starty= y;
         this.jugador= jugador;
         this.seleccionada= false;
-        this.diametro=50;
+        this.diametro=45;
         this.enTablero=false;
         this.turno = false;
     }
