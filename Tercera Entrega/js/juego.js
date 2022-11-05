@@ -124,6 +124,11 @@ function dibujarFichas() {
     fichasj1.forEach(e=>e.draw(ctx));
     fichasj2.forEach(e=>e.draw(ctx));
 }
+
+function turnoSiguiente(){
+    //ni idea se me ocurria que si una vez colocada el turno del jugador se vuelva false y pase al otro
+    //o hacer un for en el arreglo de jugadores q si esta true el turno pase a false y asi sucesivamente
+}
    
 //eventos
 

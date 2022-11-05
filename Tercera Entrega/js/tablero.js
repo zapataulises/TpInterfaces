@@ -108,7 +108,7 @@ recorrerFila(i, j){
             sentidoIzq--;
         }
         else{
-            break
+            break;
         }
     }
     while(sentidoDer < fila.length){
