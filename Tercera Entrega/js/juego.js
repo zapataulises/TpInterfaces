@@ -128,10 +128,12 @@ function dibujarFichas() {
 function turnoSiguiente(){
     if (jugador1.turno) {
         jugador1.turno=false;
+        turnoDe= jugador2;
         jugador2.turno=true;
         
     }else if(jugador2.turno){
         jugador1.turno=true;
+        turnoDe= jugador1;
         jugador2.turno=false;
     }
 
