@@ -126,8 +126,15 @@ function dibujarFichas() {
 }
 
 function turnoSiguiente(){
-    //ni idea se me ocurria que si una vez colocada el turno del jugador se vuelva false y pase al otro
-    //o hacer un for en el arreglo de jugadores q si esta true el turno pase a false y asi sucesivamente
+    if (jugador1.turno) {
+        jugador1.turno=false;
+        jugador2.turno=true;
+        
+    }else if(jugador2.turno){
+        jugador1.turno=true;
+        jugador2.turno=false;
+    }
+
 }
    
 //eventos
