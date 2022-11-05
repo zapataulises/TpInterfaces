@@ -77,7 +77,7 @@ encasillar(f, i){
             f.posy=element[i].y+2;
             element[i].ocupado=true;
             element[i].jugadorOcupa=f.jugador;
-            this.victoria(i, j);
+            this.victoryRoyale(i, j);
             turnoSiguiente();
             break;
         }
@@ -88,9 +88,76 @@ encasillar(f, i){
 
 }
 
-victoria(i, j){
+victoryRoyale(i, j){
+    if(this.recorrerFila(i, j) || this.recorrerColumna(i, j)){
+        alert("Fin de juego");
+        ganador = turnoDe.nombre;
+        timer = 0;
+    }
 
 }
 
+recorrerFila(i, j){
+    let posibleLinea = 1;
+    let fila = casilleros[i];
+    let sentidoDer = j+1;
+    let sentidoIzq = j-1;
+    while(sentidoIzq >=0){
+        if(fila[sentidoIzq].jugador == turnoDe.jugador){
+            posibleLinea++;
+            sentidoIzq--;
+        }
+        else{
+            break
+        }
+    }
+    while(sentidoDer < fila.length){
+        if(fila[sentidoDer].jugador == turnoDe.jugador){
+            posibleLinea++;
+            sentidoDer++;
+        }
+        else{
+            break;
+        }
+    }
+    if(posibleLinea == this.modo.value){
+        return true;
+    }
+    else{
+        return false;
+    }
+
+}
+
+recorrerColumna(i, j){
+    let posibleLinea = 1;;
+    let sentidoArriba = i+1;
+    let sentidoAbajo = i-1;
+    while(sentidoArriba < casilleros.length){
+        if(casilleros[sentidoArriba][j].jugador == turnoDe.jugador){
+            posibleLinea++;
+            sentidoArriba++;
+        }
+        else{
+            break;
+        }
+    }
+    while(sentidoAbajo >=0){
+        if(this.casilleros[sentidoAbajo][j]== turnoDe.jugador){
+            posibleLinea++;
+            sentidoAbajo--;
+        }
+        else{
+            break;
+        }
+
+    }
+    if(posibleLinea == this.modo.value){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
 
 }
