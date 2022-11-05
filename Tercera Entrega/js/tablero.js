@@ -57,7 +57,7 @@ class Tablero{
             let fila=this.casilleros[0];
             for (let index = 0; index < fila.length; index++) {
                 let element = fila[index];
-                if (f.posx+22>element.x && element.x+45>f.posx+22 && f.posy+22>element.y && element.y+45>f.posy+22) {
+                if (f.posx+22>element.x && element.x+40>f.posx+22 && f.posy+22>element.y && element.y+40>f.posy+22) {
                     f.enTablero=true;
                     this.encasillar(f, index);
                     break;
@@ -69,8 +69,28 @@ class Tablero{
         }
     }
     
+encasillar(f, i){
+    for (let j =this.casilleros.length-1 ; j >=0 ; j--) {
+        const element = this.casilleros[j];
+        if (element[i].ocupado==false) {
+            f.posx=element[i].x+2;
+            f.posy=element[i].y+2;
+            element[i].ocupado=true;
+            element[i].jugadorOcupa=f.jugador;
+            this.victoria(i, j);
+            turnoSiguiente();
+            break;
+        }
+        else{
+            f.enTablero=false
+        }
+    }
+
+}
+
+victoria(i, j){
 
 }
 
 
-
+}
