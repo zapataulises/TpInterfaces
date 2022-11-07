@@ -3,6 +3,8 @@
 let canvas=document.querySelector('#canvas');
 let ctx= canvas.getContext('2d');
 let btn_modo= document.querySelectorAll(".btn_modo");
+let apex = document.querySelector('#apex');
+canvas.style='display:none';
 
 //Declaracion de jugadores
 let jugadores=[];
@@ -36,6 +38,8 @@ function contrareloj(){
 
 btn_modo.forEach(btn => {
     btn.addEventListener("click", cargarJuego=>{
+        apex.style='display:none';
+        canvas.style='display:block';
         ctx.clearRect(0,0, canvas.width, canvas.height);
         //fondo
         jugadores.push(jugador1);
