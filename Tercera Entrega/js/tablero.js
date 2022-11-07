@@ -98,17 +98,14 @@ victoryRoyale(i, j){
 }
 
 recorrerTablero(i, j){  
+    let fila = casilleros[j];
+
+    //Horizzontal y vertical
     let posibleLinea = 1;
     let posibleCol = 1;
-    let fila = casilleros[j];
     let sentidoDer = i+1;
     let sentidoAbajo = j+1;
     let sentidoIzq = i-1;
-    let sentidoArriba = j-1;
-    console.log(casilleros[j][i])
-    if(j+1<this.casilleros.length){
-        console.log(casilleros[j+1][i])
-    }
     
     //Fila a izq
     while(posibleLinea<this.modo+1 && sentidoIzq>=0 && fila[sentidoIzq].jugadorOcupa){
@@ -132,27 +129,81 @@ recorrerTablero(i, j){
             break;
         }
     }
-   /* while(posibleCol<this.modo+1 && sentidoAbajo>=0 && fila[sentidoIzq].jugadorOcupa){
-        if(fila[sentidoIzq].jugadorOcupa.nombre == turnoDe.nombre){
+    //Columna Abajo
+   while(posibleCol<this.modo+1 && sentidoAbajo<this.casilleros.length && casilleros[sentidoAbajo][i].jugadorOcupa){
+        if(casilleros[sentidoAbajo][i].jugadorOcupa.nombre == turnoDe.nombre){
             console.log("MismoAbajo");
             posibleCol++;
-            sentidoIzq--;
+            sentidoAbajo++;
         }
         else{
             break;
         }
     }
-    while(posibleCol<this.modo+1 && sentidoIzq>=0 && fila[sentidoIzq].jugadorOcupa){
-        if(fila[sentidoIzq].jugadorOcupa.nombre == turnoDe.nombre){
-            console.log("MismoArriba");
-            posibleCol++;
-            sentidoIzq--;
+
+    //Diagonales
+    //Diagonal A
+    let posibleDiagA=1;
+    //A Arriba Derecha
+    let sentidoDAArriba=j-1;
+    let sentidoDADerecha=i+1;
+    while(posibleDiagA<this.modo+1 && sentidoDAArriba>=0 && sentidoDADerecha<=this.modo+2 && casilleros[sentidoDAArriba][sentidoDADerecha].jugadorOcupa){
+        if(casilleros[sentidoDAArriba][sentidoDADerecha].jugadorOcupa.nombre == turnoDe.nombre){
+            console.log("Igual ArribaDer");
+            posibleDiagA++;
+            sentidoDAArriba--;
+            sentidoDADerecha++;
         }
         else{
             break;
         }
-    }*/
-    if(posibleLinea == this.modo||posibleCol==this.modo){
+    }
+    //A Abajo Izquierda
+    let sentidoDAAbajo=j+1;
+    let sentidoDAIzquierda=i-1;
+    while(posibleDiagA<this.modo+1 && sentidoDAAbajo<this.casilleros.length && sentidoDAIzquierda>=0 && casilleros[sentidoDAAbajo][sentidoDAIzquierda].jugadorOcupa){
+        if(casilleros[sentidoDAAbajo][sentidoDAIzquierda].jugadorOcupa.nombre == turnoDe.nombre){
+            console.log("Igual AbajoIzquierda");
+            posibleDiagA++;
+            sentidoDAAbajo++;
+            sentidoDAIzquierda--;
+        }
+        else{
+            break;
+        }
+    }
+
+    //Diagonal B
+    let posibleDiagB=1;
+    //B Arriba Izquierda
+    let sentidoDBArriba=j-1;
+    let sentidoDBIzquierda=i-1;
+    while(posibleDiagB<this.modo+1 && sentidoDBArriba>=0 && sentidoDBIzquierda>=0 && casilleros[sentidoDBArriba][sentidoDBIzquierda].jugadorOcupa){
+        if(casilleros[sentidoDBArriba][sentidoDBIzquierda].jugadorOcupa.nombre == turnoDe.nombre){
+            console.log("Igual ArribaIzq");
+            posibleDiagB++;
+            sentidoDBArriba--;
+            sentidoDBIzquierda--;
+        }
+        else{
+            break;
+        }
+    }
+    //B Abajo Derecha
+    let sentidoDBAbajo=j+1;
+    let sentidoDBDerecha=i+1;
+    while(posibleDiagA<this.modo+1 && sentidoDBAbajo<this.casilleros.length && sentidoDBDerecha<=this.modo+2 && casilleros[sentidoDBAbajo][sentidoDBDerecha].jugadorOcupa){
+        if(casilleros[sentidoDBAbajo][sentidoDBDerecha].jugadorOcupa.nombre == turnoDe.nombre){
+            console.log("Igual AbajoDerecha");
+            posibleDiagB++;
+            sentidoDBAbajo++;
+            sentidoDBDerecha++;
+        }
+        else{
+            break;
+        }
+    }
+    if(posibleLinea == this.modo||posibleCol==this.modo||posibleDiagA==this.modo||posibleDiagB==this.modo){
         console.log("ganador")
         return true;
     }
