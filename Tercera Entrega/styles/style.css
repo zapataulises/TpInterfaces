@@ -397,6 +397,28 @@ footer li{
 .juegoimg{
     width: 60%;
 }
+.modo_juego{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.juegomodo{
+    display: flex;
+    justify-content: center;  
+    margin: 5px;  
+}
+.btn_modo{
+    margin-inline: 20px;
+    background: transparent;
+    border-radius: 6px;
+    font-size: 20px;
+    color: yellow;
+
+}
+.btn_modo:hover {
+    background-color: #008CBA;
+    color: white;
+}
 .tablero{
     position: absolute;
     width: 45%;
