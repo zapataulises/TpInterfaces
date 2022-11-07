@@ -35,6 +35,9 @@ function contrareloj(){
     if (timer>0) {
         timer--;
         recarga();
+    }else{
+        recarga();
+        anunciarGanador();
     }
 }
 
@@ -67,7 +70,7 @@ btn_modo.forEach(btn => {
         eventos();
 
         timer=180;
-        //setInterval(contrareloj, 1000)
+        setInterval(contrareloj, 1000)
         
 
     })
@@ -178,6 +181,7 @@ function mouseDown(e) {
     }
 }
 function mouseMove(e) {
+    let i=0
     let x = e.pageX-canvas.offsetLeft;
     let y = e.pageY-canvas.offsetTop;
     fichasj1.forEach(f=>f.moverPos(x,y));

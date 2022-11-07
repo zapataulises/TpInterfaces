@@ -91,10 +91,8 @@ encasillar(f, i){
 
 victoryRoyale(i, j){
     if(this.recorrerTablero(i, j)){
-        console.log("El " + turnoDe.nombre + " ha ganado");
         ganador = turnoDe.nombre;
         timer = 0;
-        setTimeout(anunciarGanador(), 700);
     }
 
 }
