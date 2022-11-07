@@ -691,6 +691,12 @@ form {
 .canvas{
     align-self: center;
 }
+.finish{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 .table{
     align-items: center;
     justify-content: center;

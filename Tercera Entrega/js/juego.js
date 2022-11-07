@@ -4,6 +4,10 @@ let canvas=document.querySelector('#canvas');
 let ctx= canvas.getContext('2d');
 let btn_modo= document.querySelectorAll(".btn_modo");
 let apex = document.querySelector('#apex');
+let aj = document.querySelector('#aj');
+let gamemode = document.querySelector('#gamemode');
+let gamemode2 = document.querySelector('#gamemode2');
+aj.style='display:none';
 canvas.style='display:none';
 
 //Declaracion de jugadores
@@ -20,6 +24,7 @@ let jugador2= new Jugador("Jugador 2", imgJ2);
 let fichasj2;
 
 //Declaracion variables
+let ganador;
 let turnoDe;
 let modo;
 let tablero;
@@ -40,11 +45,15 @@ btn_modo.forEach(btn => {
     btn.addEventListener("click", cargarJuego=>{
         apex.style='display:none';
         canvas.style='display:block';
+        gamemode.style='display:none';
+        gamemode2.style='display:none';
+        aj.style= 'display:none';
         ctx.clearRect(0,0, canvas.width, canvas.height);
         //fondo
         jugadores.push(jugador1);
         jugadores.push(jugador2);
         jugador1.turno=true;
+        ganador= null;
         turnoDe= jugador1;
         modo= Number(btn.value);
         fichasj1=[];
@@ -180,3 +189,12 @@ function mouseUp() {
    fichasj2.forEach(f=>tablero.colocar(f)); 
 }
     
+function anunciarGanador() {
+ if(ganador != null){
+    jugador1.turno = false;
+    jugador2.turno = false;
+    aj.style='display:flex';
+    gamemode.style='display:flex';
+    gamemode2.style='display:flex';
+ }
+}
