@@ -182,7 +182,10 @@ function mouseMove(e) {
     let y = e.pageY-canvas.offsetTop;
     fichasj1.forEach(f=>f.moverPos(x,y));
     fichasj2.forEach(f=>f.moverPos(x,y));
+    if(ganador == null){
     recarga();
+}
+
 }
 function mouseUp() {
    fichasj1.forEach(f=>tablero.colocar(f));

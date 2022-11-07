@@ -70,6 +70,7 @@ class Tablero{
     }
     
 encasillar(f, i){
+    
     for (let j =this.casilleros.length-1 ; j >=0 ; j--) {
         const element = this.casilleros[j];
         if (element[i].ocupado==false) {
@@ -93,7 +94,7 @@ victoryRoyale(i, j){
         console.log("El " + turnoDe.nombre + " ha ganado");
         ganador = turnoDe.nombre;
         timer = 0;
-       setTimeout(anunciarGanador(), 700);
+        setTimeout(anunciarGanador(), 700);
     }
 
 }
