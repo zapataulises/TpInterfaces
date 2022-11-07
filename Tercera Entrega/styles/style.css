@@ -418,6 +418,7 @@ footer li{
 .btn_modo:hover {
     background-color: #008CBA;
     color: white;
+    cursor: pointer;
 }
 .tablero{
     position: absolute;

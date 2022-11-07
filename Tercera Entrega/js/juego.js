@@ -190,11 +190,14 @@ function mouseUp() {
 }
     
 function anunciarGanador() {
+    ctx.font = "30px Verdana";
+    ctx.fillStyle = "Yellow";
  if(ganador != null){
     jugador1.turno = false;
     jugador2.turno = false;
     aj.style='display:flex';
     gamemode.style='display:flex';
     gamemode2.style='display:flex';
+    ctx.fillText(`Juego Finalizado ${ganador} ha ganado`,400,80);
  }
 }
