@@ -6,11 +6,13 @@ class Casillero{
         this.y=y;
         this.ctx=ctx;
         this.ocupado=false;
-        this.jugadorOcupa;
         this.img= img;
         
     }
-
+    setJugadorOcupa(jugador){
+        let jugadorOcupa;
+        this.jugadorOcupa=jugador;
+    }
     draw(carga){
         let ctx=this.ctx;
         let x=this.x;

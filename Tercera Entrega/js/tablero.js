@@ -76,7 +76,7 @@ encasillar(f, i){
             f.posx, f.startx=element[i].x+2;
             f.posy, f.starty=element[i].y+2;
             element[i].ocupado=true;
-            element[i].jugadorOcupa=f.jugador;
+            element[i].setJugadorOcupa(f.jugador);
             this.victoryRoyale(i, j);
             turnoSiguiente();
             break
@@ -89,21 +89,31 @@ encasillar(f, i){
 }
 
 victoryRoyale(i, j){
-    if(this.recorrerFila(i, j) || this.recorrerColumna(i, j)){
-        alert("Fin de juego");
-        ganador = turnoDe.nombre;
+    if(this.recorrerTablero(i, j)){
+        console.log("hola");
+        //ganador = turnoDe.nombre;
         timer = 0;
     }
 
 }
 
-recorrerFila(i, j){
+recorrerTablero(i, j){  
     let posibleLinea = 1;
-    let fila = casilleros[i];
-    let sentidoDer = j+1;
-    let sentidoIzq = j-1;
-    while(sentidoIzq >=0){
-        if(fila[sentidoIzq].jugador == turnoDe.jugador){
+    let posibleCol = 1;
+    let fila = casilleros[j];
+    let sentidoDer = i+1;
+    let sentidoAbajo = j+1;
+    let sentidoIzq = i-1;
+    let sentidoArriba = j-1;
+    console.log(casilleros[j][i])
+    if(j+1<this.casilleros.length){
+        console.log(casilleros[j+1][i])
+    }
+    
+    //Fila a izq
+    while(posibleLinea<this.modo+1 && sentidoIzq>=0 && fila[sentidoIzq].jugadorOcupa){
+        if(fila[sentidoIzq].jugadorOcupa.nombre == turnoDe.nombre){
+            console.log("MismoIzq");
             posibleLinea++;
             sentidoIzq--;
         }
@@ -111,8 +121,10 @@ recorrerFila(i, j){
             break;
         }
     }
-    while(sentidoDer < fila.length){
-        if(fila[sentidoDer].jugador == turnoDe.jugador){
+    //Fila a der
+    while(posibleLinea<this.modo+1 && sentidoDer<=this.modo+2 && fila[sentidoDer].jugadorOcupa){
+        if(fila[sentidoDer].jugadorOcupa.nombre == turnoDe.nombre){
+            console.log("MismoDer");
             posibleLinea++;
             sentidoDer++;
         }
@@ -120,7 +132,28 @@ recorrerFila(i, j){
             break;
         }
     }
-    if(posibleLinea == this.modo.value){
+   /* while(posibleCol<this.modo+1 && sentidoAbajo>=0 && fila[sentidoIzq].jugadorOcupa){
+        if(fila[sentidoIzq].jugadorOcupa.nombre == turnoDe.nombre){
+            console.log("MismoAbajo");
+            posibleCol++;
+            sentidoIzq--;
+        }
+        else{
+            break;
+        }
+    }
+    while(posibleCol<this.modo+1 && sentidoIzq>=0 && fila[sentidoIzq].jugadorOcupa){
+        if(fila[sentidoIzq].jugadorOcupa.nombre == turnoDe.nombre){
+            console.log("MismoArriba");
+            posibleCol++;
+            sentidoIzq--;
+        }
+        else{
+            break;
+        }
+    }*/
+    if(posibleLinea == this.modo||posibleCol==this.modo){
+        console.log("ganador")
         return true;
     }
     else{
@@ -129,35 +162,6 @@ recorrerFila(i, j){
 
 }
 
-recorrerColumna(i, j){
-    let posibleLinea = 1;;
-    let sentidoArriba = i+1;
-    let sentidoAbajo = i-1;
-    while(sentidoArriba < casilleros.length){
-        if(casilleros[sentidoArriba][j].jugador == turnoDe.jugador){
-            posibleLinea++;
-            sentidoArriba++;
-        }
-        else{
-            break;
-        }
-    }
-    while(sentidoAbajo >=0){
-        if(this.casilleros[sentidoAbajo][j]== turnoDe.jugador){
-            posibleLinea++;
-            sentidoAbajo--;
-        }
-        else{
-            break;
-        }
 
-    }
-    if(posibleLinea == this.modo.value){
-        return true;
-    }
-    else{
-        return false;
-    }
-}
 
 }
