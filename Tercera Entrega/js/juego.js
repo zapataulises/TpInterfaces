@@ -40,7 +40,12 @@ function contrareloj(){
         anunciarGanador();
     }
 }
-
+//
+let fondo = new Image();
+   fondo.src = "./img/namek.png";
+   fondo.onload = function(){
+    ctx.drawImage(fondo,0,0,canvas.width,canvas.height)
+ }
 
 //Iniciar segun la opcion
 
@@ -52,7 +57,7 @@ btn_modo.forEach(btn => {
         gamemode2.style='display:none';
         aj.style= 'display:none';
         ctx.clearRect(0,0, canvas.width, canvas.height);
-        //fondo
+        ctx.drawImage(fondo,0,0,canvas.width,canvas.height)
         jugadores.push(jugador1);
         jugadores.push(jugador2);
         jugador1.turno=true;
@@ -78,7 +83,7 @@ btn_modo.forEach(btn => {
 
 function recarga() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
-    //fondo
+    ctx.drawImage(fondo,0,0,canvas.width,canvas.height)
     tablero.draw();
     dibujarFichas();
 }
@@ -205,6 +210,6 @@ function anunciarGanador() {
     aj.style='display:flex';
     gamemode.style='display:flex';
     gamemode2.style='display:flex';
-    ctx.fillText(`Juego Finalizado ${ganador} ha ganado`,400,80);
+    ctx.fillText(`Juego Finalizado ${ganador} ha ganado`,350,80);
  }
 }

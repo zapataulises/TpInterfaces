@@ -869,3 +869,10 @@ form {
     width: 620px;
     height: 320px;
 }
+
+.game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
