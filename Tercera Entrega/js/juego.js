@@ -86,6 +86,7 @@ function recarga() {
     ctx.drawImage(fondo,0,0,canvas.width,canvas.height)
     tablero.draw();
     dibujarFichas();
+    showTimer();
 }
 
 function genFichas(modo){
@@ -212,4 +213,17 @@ function anunciarGanador() {
     gamemode2.style='display:flex';
     ctx.fillText(`Juego Finalizado ${ganador} ha ganado`,350,80);
  }
+ else{
+    ctx.fillStyle = "Yellow";
+    ctx.fillText(`Namek ha explotado Se declaro Empate`,350,80);
+ }
 }
+
+function showTimer(){
+    if(timer>0){
+       let tiempoRestante = timer % 180;
+       tiempoRestante = tiempoRestante < 10 ? "0" + tiempoRestante : tiempoRestante;
+       ctx.font = "30px Verdana";
+       ctx.fillStyle = "yellow";
+       ctx.fillText(`Namek explotará en ${tiempoRestante}`, 420, 80); 
+    }}
