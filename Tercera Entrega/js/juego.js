@@ -214,6 +214,8 @@ function anunciarGanador() {
     ctx.fillText(`Juego Finalizado ${ganador} ha ganado`,350,80);
  }
  else{
+    gamemode.style='display:flex';
+    gamemode2.style='display:flex';
     ctx.fillStyle = "Yellow";
     ctx.fillText(`Namek ha explotado Se declaro Empate`,350,80);
  }
