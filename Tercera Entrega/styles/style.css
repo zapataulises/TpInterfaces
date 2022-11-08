@@ -879,7 +879,7 @@ form {
 
 #reiniciar{
     display: flex;
-    position: absolute;
+    position: relative;
     bottom: -20%;
     z-index: 1;
     background: #E2C811;
