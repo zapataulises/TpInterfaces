@@ -58,6 +58,7 @@ btn_modo.forEach(btn => {
         canvas.style='display:block';
         gamemode.style='display:none';
         gamemode2.style='display:none';
+        reiniciar.style='display:flex';
         aj.style= 'display:none';
         ctx.clearRect(0,0, canvas.width, canvas.height);
         ctx.drawImage(fondo,0,0,canvas.width,canvas.height)
@@ -215,13 +216,11 @@ function anunciarGanador() {
     aj.style='display:flex';
     gamemode.style='display:flex';
     gamemode2.style='display:flex';
-    reiniciar.style='display:flex';
     ctx.fillText(`Juego Finalizado ${ganador} ha ganado`,350,80);
  }
  else{
     gamemode.style='display:flex';
     gamemode2.style='display:flex';
-    reiniciar.style='display:flex';
     ctx.fillStyle = "Yellow";
     ctx.fillText(`Namek ha explotado Se declaro Empate`,350,80);
  }
@@ -239,9 +238,10 @@ function showTimer(){
 
 //Recargar juego
 reiniciar.addEventListener("click", recarga=>{
-    ctx.clearRect(0,0, canvas.width, canvas.height);
     gamemode.style='display:flex';
     gamemode2.style='display:flex';
-    reiniciar.style='display:none';
+    reiniciar.style='display:none'
+    canvas.style='display:none';
+    apex.style='display:flex';
 });
 
