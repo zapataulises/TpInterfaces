@@ -239,6 +239,9 @@ function showTimer(){
 
 //Recargar juego
 reiniciar.addEventListener("click", recarga=>{
-    location.reload();
+    ctx.clearRect(0,0, canvas.width, canvas.height);
+    gamemode.style='display:flex';
+    gamemode2.style='display:flex';
+    reiniciar.style='display:none';
 });
 
