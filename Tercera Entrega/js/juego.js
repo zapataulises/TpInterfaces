@@ -1,5 +1,6 @@
 "use strict"
 
+//elementos a utilizar del DOM
 let canvas=document.querySelector('#canvas');
 let ctx= canvas.getContext('2d');
 let btn_modo= document.querySelectorAll(".btn_modo");
@@ -7,8 +8,10 @@ let apex = document.querySelector('#apex');
 let aj = document.querySelector('#aj');
 let gamemode = document.querySelector('#gamemode');
 let gamemode2 = document.querySelector('#gamemode2');
+let reiniciar = document.querySelector('#reiniciar');
 aj.style='display:none';
 canvas.style='display:none';
+reiniciar.style='display:none';
 
 //Declaracion de jugadores
 let jugadores=[];
@@ -201,7 +204,8 @@ function mouseUp() {
    fichasj1.forEach(f=>tablero.colocar(f));
    fichasj2.forEach(f=>tablero.colocar(f)); 
 }
-    
+
+//Anunciar ganador o empate según
 function anunciarGanador() {
     ctx.font = "30px Verdana";
     ctx.fillStyle = "Yellow";
@@ -211,16 +215,19 @@ function anunciarGanador() {
     aj.style='display:flex';
     gamemode.style='display:flex';
     gamemode2.style='display:flex';
+    reiniciar.style='display:flex';
     ctx.fillText(`Juego Finalizado ${ganador} ha ganado`,350,80);
  }
  else{
     gamemode.style='display:flex';
     gamemode2.style='display:flex';
+    reiniciar.style='display:flex';
     ctx.fillStyle = "Yellow";
     ctx.fillText(`Namek ha explotado Se declaro Empate`,350,80);
  }
 }
 
+//Muestra una cuenta atrás y un mensaje relacionado a la historia
 function showTimer(){
     if(timer>0){
        let tiempoRestante = timer % 180;
@@ -229,3 +236,9 @@ function showTimer(){
        ctx.fillStyle = "yellow";
        ctx.fillText(`Namek explotará en ${tiempoRestante} segundos`, 360, 60); 
     }}
+
+//Recargar juego
+reiniciar.addEventListener("click", recarga=>{
+    location.reload();
+});
+
