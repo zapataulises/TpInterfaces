@@ -227,5 +227,5 @@ function showTimer(){
        tiempoRestante = tiempoRestante < 10 ? "0" + tiempoRestante : tiempoRestante;
        ctx.font = "30px Verdana";
        ctx.fillStyle = "yellow";
-       ctx.fillText(`Namek explotará en ${tiempoRestante}`, 420, 80); 
+       ctx.fillText(`Namek explotará en ${tiempoRestante} segundos`, 360, 60); 
     }}
