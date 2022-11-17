@@ -913,3 +913,14 @@ form {
     transition: all 0.3s ease-out;
   transform: skewX(-65deg) scale(1, 1);
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /*transition-duration: 7000ms;
+    transform: scale(0.7);*/
+  }
+  .sticky + .content {
+    padding-top: 100px;
+  }
