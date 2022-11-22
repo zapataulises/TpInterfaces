@@ -1,6 +1,12 @@
 *{
     margin: 0;
 }
+body{
+   background-color:#1d0f18 ; 
+}
+html::-webkit-scrollbar {
+    display: none;
+}
 .navbar, .botonera{
     display: flex;
 }
@@ -33,39 +39,5 @@ list-style: none;
 }
 .imgParallax img{
     position: absolute;
-}
-#capa1{
     width: 100%;
-    top: 0%;
-}
-#capa2{
-    width: 31%;
-    top: 8%;
-}
-#capa3{
-    width: 100%;
-    top: 0%;
-}
-#capa4{
-    width: 40%;
-    left: 28.6%;
-    top: 24%;
-}
-#capa5{
-    width: 51%;
-    left: 25%;
-    top: 40.5%;
-}
-#capa6{
-    width: 59%;
-    top: 39.2%;
-}
-#capa7{
-    width: 71%;
-    left: 12%;
-    top: 46%;
-}
-#capa8{
-    width: 100%;
-    top: 47%;
 }
