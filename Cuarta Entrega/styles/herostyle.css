@@ -5,13 +5,16 @@
     display: flex;
 }
 .navbar{
-    background-color: #1d0f18;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: linear-gradient(to bottom, #1d0f18, rgba(0,0,0,0));
     align-items: center;
     justify-content: space-between;
-    padding-inline: 1em;
     margin: 0;
 }
 .icon{
+    padding-left: 1em;
     width: 5.2em;
     height: 5.2em;
 }
@@ -33,25 +36,36 @@ list-style: none;
 }
 #capa1{
     width: 100%;
+    top: 0%;
 }
 #capa2{
     width: 31%;
+    top: 8%;
 }
 #capa3{
     width: 100%;
+    top: 0%;
 }
 #capa4{
     width: 40%;
+    left: 28.6%;
+    top: 24%;
 }
 #capa5{
     width: 51%;
+    left: 25%;
+    top: 40.5%;
 }
 #capa6{
     width: 59%;
+    top: 39.2%;
 }
 #capa7{
     width: 71%;
+    left: 12%;
+    top: 46%;
 }
 #capa8{
     width: 100%;
+    top: 47%;
 }
