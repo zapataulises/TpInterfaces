@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+}
+.navbar, .botonera{
+    display: flex;
+}
+.navbar{
+    background-color: #1d0f18;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1em;
+    margin: 0;
+}
+.icon{
+    width: 5.2em;
+    height: 5.2em;
+}
+.botonera {
+gap: 2em;
+list-style: none;
+}
+.botonera li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.imgParallax{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.imgParallax img{
+    position: absolute;
+}
+#capa1{
+    width: 100%;
+}
+#capa2{
+    width: 31%;
+}
+#capa3{
+    width: 100%;
+}
+#capa4{
+    width: 40%;
+}
+#capa5{
+    width: 51%;
+}
+#capa6{
+    width: 59%;
+}
+#capa7{
+    width: 71%;
+}
+#capa8{
+    width: 100%;
+}
