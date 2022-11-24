@@ -7,6 +7,11 @@ body{
 html::-webkit-scrollbar {
     display: none;
 }
+
+
+
+
+
 .navbar, .botonera{
     display: flex;
 }
@@ -32,6 +37,8 @@ list-style: none;
     color: aliceblue;
     text-decoration: none;
 }
+
+
 .imgParallax{
     display: flex;
     align-self: center;
@@ -43,4 +50,48 @@ list-style: none;
 }
 #capa1{
     position: relative;
+}
+
+
+.capa{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+}
+.capa1{
+    background-image: url(../img/Parallax/FondoC1.png);
+}
+.capa2{
+    background-image: url(../img/Parallax/LunaC2.png);
+}
+.capa3{
+    background-image: url(../img/Parallax/NubesC3.png);
+}
+.capa4{
+    background-image: url(../img/Parallax/CastilloC4.png);
+}
+.capa5{
+    background-image: url(../img/Parallax/CiudadC5.png);
+}
+.capa6{
+    background-image: url(../img/Parallax/CiudadC6.png);
+}
+.capa7{
+    background-image: url(../img/Parallax/CiudadC7.png);
+}
+.capa8{
+    background-image: url(../img/Parallax/CiudadC8.png);
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.descripcion img{
+    width: 5em;
+}
+.descripcion h1{
+    color:#FFD6EB
 }
