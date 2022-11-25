@@ -98,72 +98,97 @@ list-style: none;
 
 
 /*Menu*/
-.lbl-menu{
-    width: 40px;
+.checkbox {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0;
+}
+.menuBurger {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 30px;
     height: 30px;
     position: relative;
-    cursor: pointer;
-	transform: scale(1.2);
+    margin-right: 2em;
 }
-.lbl-menu #spn1,#spn2,#spn3{
-    position: absolute;
-    content: '';
-    background:#ffff;
-    width: 40px;
-    height: 5px;
-    border-radius: 5px;
-    transition: all 400ms ease;
-}
-#spn2{
-    top: 12px;
-}
-#spn3{
-    top: 23px;
-}
-#btn-menu{
-    display: none;
-}
-#btn-menu:checked ~ .lbl-menu #spn1{
-    animation-name: menu;
-    animation-duration: 4s;
-    top: 10px;
-}
-#btn-menu:checked ~ .lbl-menu #spn2{
-    opacity: 0;
-}
-#btn-menu:checked ~ .lbl-menu #spn3{
-    animation-name: menu2;
-    animation-duration: 4s;
-    top: 10px;
+.menuBurger .linea {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute; 
 }
 
-@keyframes menu {
+
+.linea1 {
+    top: 0;
+    transform-origin: 5%;
+}
+.linea2{
+    top: 13.5px;
+}
+
+.linea3 {
+    bottom: 0;
+    transform-origin: 5%;
+}
+
+
+@keyframes linea1 {
     from{transform:rotate(0deg) ;}
-    to{transform: rotate(140deg);}
+    to{transform: rotate(45deg);}
+}
+@keyframes linea3 {
+    from{transform:rotate(0deg) ;}
+    to{transform: rotate(-45deg);}
+}
+@keyframes linea2 {
+    from{transform:scale(1) ;}
+    to{transform: scale(0);}
+}
+@keyframes linea1b {
+    from{transform:rotate(45deg) ;}
+    to{transform: rotate(0deg);}
+}
+@keyframes linea2b {
+    from{transform:scale(0) ;}
+    to{transform: scale(1);}
+}
+@keyframes linea3b {
+    from{transform:rotate(-45deg) ;}
+    to{transform: rotate(0deg);}
 }
 
-@keyframes menu2{
-    from{transform: rotate(140deg);}
-    to{transform: rotate(-140deg);}
+.checkbox:checked + label > .menuBurger > .linea1{
+    height: 3px;
+    width: 42px;
+    animation: ease .7s linea1 forwards;
+
+}
+.checkbox:not(:checked) + label > .menuBurger > .linea1{
+    animation: ease .7s linea1b forwards;
 }
 
 
-/*
-@keyframes transicionMenu{
-    from{transform: rotateZ(0deg);}
-
-    to{transform: rotateZ(360deg);}
-    
+.checkbox:checked + label > .menuBurger > .linea2{
+    height: 3px;
+    animation: ease .7s linea2 forwards;
 }
-.userlogo{
-    height: 4em;
-    width: 4em;
-    animation-name: transicionMenu;
-    animation-duration: 9s;
+.checkbox:not(:checked) + label > .menuBurger > .linea2{
+    animation: ease .7s linea2b forwards;
 }
 
-@keyframes cambiar{
-    from{}
-    to{}
+
+.checkbox:checked + label > .menuBurger > .linea3{
+    animation: ease .7s linea3 forwards;
+    height: 3px;
+    width: 42px;
 }
-*/
+.checkbox:not(:checked) + label > .menuBurger > .linea3{
+    animation: ease .7s linea3b forwards;
+}
