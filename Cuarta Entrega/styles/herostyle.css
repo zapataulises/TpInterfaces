@@ -37,7 +37,10 @@ list-style: none;
     color: aliceblue;
     text-decoration: none;
 }
-
+.userlogo{
+    height: 4em;
+    width: 4em;
+}
 
 .imgParallax{
     display: flex;
