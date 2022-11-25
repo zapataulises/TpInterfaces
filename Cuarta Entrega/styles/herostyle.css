@@ -95,6 +95,79 @@ list-style: none;
 .descripcion h1{
     color:#FFD6EB
 }
+
+
+/*Menu*/
+.checkbox {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0;
+}
+.menuBurger {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-right: 2em;
+}
+.menuBurger .linea {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute; 
+}
+
+
+.linea1 {
+    top: 0;
+    transform-origin: 5%;
+}
+.linea2, .linea3{
+    top: 13.5px;
+}
+.linea3{
+    right: 0;
+}
+
+.linea4 {
+    bottom: 0;
+    transform-origin: 5%;
+}
+
+.checkbox:checked + label > .menuBurger > .linea1{
+    transform: rotate(45deg);
+    height: 3px;
+    width: 42px;
+}
+
+.checkbox:checked + label > .menuBurger > .linea3{
+    transform: rotate(45deg);
+    height: 3px;
+    background-color: transparent;
+}
+
+.checkbox:checked + label > .menuBurger > .linea2{
+    transform: rotate(-45deg);
+    height: 3px;
+    background-color: transparent;
+}
+
+.checkbox:checked + label > .menuBurger > .linea4{
+    transform: rotate(-45deg);
+    height: 3px;
+    width: 42px;
+}
+
+
+
+/*
 @keyframes transicionMenu{
     from{transform: rotateZ(0deg);}
 
@@ -112,3 +185,4 @@ list-style: none;
     from{}
     to{}
 }
+*/
