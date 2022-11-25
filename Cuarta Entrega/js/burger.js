@@ -1,13 +1,13 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", function () {
 
-let botonera = document.querySelector(".navbar");
-let sticky = botonera.offsetTop;
 let burger=0;
 let burgerMenu=document.querySelector("#menuVertical");
 document.querySelector("#burger").addEventListener("click", function () {
+    console.log(burger);
     
     if (burger==0) {
+        
 
         burgerMenu.classList.add("menu-on");
         burgerMenu.classList.remove("menu-off");
@@ -20,15 +20,7 @@ document.querySelector("#burger").addEventListener("click", function () {
     }
 });
 
-function stickyScroll(){
-    if (window.pageYOffset > sticky) {
-        botonera.classList.add("sticky");
-      } else {
-        botonera.classList.remove("sticky");
-      }
-}
 
-window.onscroll = function() {stickyScroll()};
 
 
 
