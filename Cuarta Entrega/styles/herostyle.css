@@ -37,10 +37,7 @@ list-style: none;
     color: aliceblue;
     text-decoration: none;
 }
-.userlogo{
-    height: 4em;
-    width: 4em;
-}
+
 
 .imgParallax{
     display: flex;
@@ -97,4 +94,21 @@ list-style: none;
 }
 .descripcion h1{
     color:#FFD6EB
+}
+@keyframes transicionMenu{
+    from{transform: rotateZ(0deg);}
+
+    to{transform: rotateZ(360deg);}
+    
+}
+.userlogo{
+    height: 4em;
+    width: 4em;
+    animation-name: transicionMenu;
+    animation-duration: 9s;
+}
+
+@keyframes cambiar{
+    from{}
+    to{}
 }
