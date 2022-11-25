@@ -98,73 +98,54 @@ list-style: none;
 
 
 /*Menu*/
-.checkbox {
-    position: absolute; 
-    overflow: hidden; 
-    clip: rect(0 0 0 0); 
-    height: 1px; width: 1px; 
-    margin: -1px; padding: 0; border: 0;
-}
-.menuBurger {
-    margin: 0 auto;
-    margin-top: 30px;
-    width: 30px;
+.lbl-menu{
+    width: 40px;
     height: 30px;
     position: relative;
-    margin-right: 2em;
+    cursor: pointer;
+	transform: scale(1.2);
 }
-.menuBurger .linea {
-    padding: 0;
-    width: 30px;
-    height: 4px;
-    background-color: white;
-    display: block;
-    border-radius: 4px;
-    transition: all 0.4s ease-in-out;
-    position: absolute; 
+.lbl-menu #spn1,#spn2,#spn3{
+    position: absolute;
+    content: '';
+    background:#ffff;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    transition: all 400ms ease;
 }
-
-
-.linea1 {
-    top: 0;
-    transform-origin: 5%;
+#spn2{
+    top: 12px;
 }
-.linea2, .linea3{
-    top: 13.5px;
+#spn3{
+    top: 23px;
 }
-.linea3{
-    right: 0;
+#btn-menu{
+    display: none;
 }
-
-.linea4 {
-    bottom: 0;
-    transform-origin: 5%;
+#btn-menu:checked ~ .lbl-menu #spn1{
+    animation-name: menu;
+    animation-duration: 4s;
+    top: 10px;
 }
-
-.checkbox:checked + label > .menuBurger > .linea1{
-    transform: rotate(45deg);
-    height: 3px;
-    width: 42px;
+#btn-menu:checked ~ .lbl-menu #spn2{
+    opacity: 0;
 }
-
-.checkbox:checked + label > .menuBurger > .linea3{
-    transform: rotate(45deg);
-    height: 3px;
-    background-color: transparent;
+#btn-menu:checked ~ .lbl-menu #spn3{
+    animation-name: menu2;
+    animation-duration: 4s;
+    top: 10px;
 }
 
-.checkbox:checked + label > .menuBurger > .linea2{
-    transform: rotate(-45deg);
-    height: 3px;
-    background-color: transparent;
+@keyframes menu {
+    from{transform:rotate(0deg) ;}
+    to{transform: rotate(140deg);}
 }
 
-.checkbox:checked + label > .menuBurger > .linea4{
-    transform: rotate(-45deg);
-    height: 3px;
-    width: 42px;
+@keyframes menu2{
+    from{transform: rotate(140deg);}
+    to{transform: rotate(-140deg);}
 }
-
 
 
 /*
