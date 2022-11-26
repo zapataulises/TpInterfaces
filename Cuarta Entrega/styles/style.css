@@ -1018,3 +1018,17 @@ label{margin-right: 2em;
 .user img{
     width: 3em;
 }
+.navbar{
+    animation: body 1s linear;
+}
+.navbar:root  {
+    /* Bind the animation to scroll */
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-fill-mode: both;
+  }
+
+
+@keyframes body{
+    from{transform:scale(1) ;}
+    to{transform: scale(0.7);
+}}

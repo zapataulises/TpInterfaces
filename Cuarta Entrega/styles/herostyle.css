@@ -62,11 +62,28 @@ list-style: none;
 .capa1{
     background-image: url(../img/Parallax/FondoC1.png);
 }
+
 .capa2{
     background-image: url(../img/Parallax/LunaC2.png);
+    transform-origin: 50% 33.73%;
+    animation: linear 20s girar infinite;
+}
+@keyframes girar {
+    0%{
+        transform:scale(1) rotate(0deg);}
+    50%{
+        transform: scale(1.1)rotate(180deg); ;}
+    100%{
+        transform: scale(1) rotate(360deg);}
 }
 .capa3{
     background-image: url(../img/Parallax/NubesC3.png);
+    animation: linear 10s nube infinite;
+}
+@keyframes nube {
+    0%{transform:scaleX(1) ;}
+    50%{transform: scaleX(1.1);}
+    100%{transform: scaleX(1);}
 }
 .capa4{
     background-image: url(../img/Parallax/CastilloC4.png);
@@ -82,6 +99,22 @@ list-style: none;
 }
 .capa8{
     background-image: url(../img/Parallax/CiudadC8.png);
+    background-repeat: repeat-x;
+    animation: linear 30s mover infinite;
+
+}
+@keyframes mover {
+    0%{background-position-x:0px ;}
+    100%{background-position-x: 1920px;}
+}
+.capa9{
+    background-image: url(../img/Parallax/VinC9.png);
+    animation: linear 5s vin infinite;
+}
+@keyframes vin {
+    0%{transform:scale(1) ;}
+    50%{transform: scale(1.2);}
+    100%{transform: scale(1);}
 }
 
 .descripcion{
