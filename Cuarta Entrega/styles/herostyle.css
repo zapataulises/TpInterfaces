@@ -240,10 +240,10 @@ h2{
     display: none;
 }
 .off-plan-izq{
-    animation: quitar-izq 1s linear;
+    animation: quitar-izq 0.5s linear;
 }
 .off-plan-der{
-    animation: quitar-der 1s linear;
+    animation: quitar-der 0.5s linear;
 }
 .on-plan-der{  
     display: flex;

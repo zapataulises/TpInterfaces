@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     })
     function delay(time) {
-        console.log("hola");
         return new Promise(resolve => setTimeout(resolve, time));
       }
 })
