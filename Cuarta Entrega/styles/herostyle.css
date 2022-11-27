@@ -67,9 +67,9 @@ list-style: none;
 .capa2{
     background-image: url(../img/Parallax/LunaC2.png);
     transform-origin: 50% 33.73%;
-    animation: linear 20s girar infinite;
+    animation: linear 20s girarluna infinite;
 }
-@keyframes girar {
+@keyframes girarluna {
     0%{
         transform:scale(1) rotate(0deg);}
     50%{
@@ -149,10 +149,10 @@ list-style: none;
 .planetas {
     color: aliceblue;
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 .planeta{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,7 +214,7 @@ list-style: none;
 }
 .carru:hover{
     animation-play-state: paused;}
-    
+
 .flecha{
     height: 4px;
     margin: 30px;
@@ -239,6 +239,30 @@ h2{
 .off-plan{
     display: none;
 }
-.on-plan{
+.on-plan-der{  
     display: flex;
+    animation: centrar-der 1s linear;
+}
+.on-plan-izq{
+    display: flex;
+    animation: centrar-izq 1s linear;
+}
+
+
+
+@keyframes centrar-der{
+    from{
+        transform: translateX(1920px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes centrar-izq{
+    from{
+        transform: translateX(-1920px);
+    }
+    to{
+        transform: translateX(0px);
+    }
 }
