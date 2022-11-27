@@ -213,5 +213,32 @@ list-style: none;
     height: 100px;
 }
 .carru:hover{
-    animation-play-state: paused;
+    animation-play-state: paused;}
+    
+.flecha{
+    height: 4px;
+    margin: 30px;
+    width: 50px;
+    background-color: white;
+}
+.cont-planetas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flecha-1, .flecha-4{
+ rotate: -45deg;
+}
+.flecha-2, .flecha-3{
+    rotate: 45deg;
+}
+h2{
+    text-align: center;
+    color: aliceblue;
+}
+.off-plan{
+    display: none;
+}
+.on-plan{
+    display: flex;
 }
