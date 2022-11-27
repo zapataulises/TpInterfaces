@@ -39,4 +39,32 @@ document.addEventListener("DOMContentLoaded", function () {
     function delay(time) {
         return new Promise(resolve => setTimeout(resolve, time));
       }
+
+window.addEventListener("scroll", function () {
+    let textos = document.querySelectorAll(".texto");
+    let imgs = document.querySelectorAll(".img")
+    textos.forEach(function (t) {
+        t.classList.add("oculto")
+      })
+      imgs.forEach(function (t) {
+        t.classList.add("imgOculta")
+      })
+      if (scrollY < 900) {
+        textos[0].classList.remove("oculto");
+        imgs[0].classList.remove("imgOculta");
+      }
+      else if (scrollY >= 900 && scrollY < 1400) {
+        textos[1].classList.remove("oculto");
+        imgs[1].classList.remove("imgOculta");
+      } else {
+        textos[2].classList.remove("oculto")
+        imgs[2].classList.remove("imgOculta");
+      }
+    
+    })
+    
+    
+
 })
+
+    

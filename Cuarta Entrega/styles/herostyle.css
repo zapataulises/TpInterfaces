@@ -142,7 +142,7 @@ list-style: none;
     width: 70em;
 }
 .lateral img{
-    width: 30em;
+    width: 40em;
     border-radius: 20px;
 }
 
@@ -288,3 +288,32 @@ h2{
         transform: translateX(0px);
     }
 }
+
+.stickyScroll{
+    position: sticky;
+    height: 100%;
+    top: 30%;
+  }
+
+.texto{
+    transition: opacity .4s ease-in-out;
+    text-align: center;
+   
+  }
+  
+  .img{
+    transition: opacity .4s ease-in-out;
+    background-color: antiquewhite;
+    
+  }
+  .img:last-of-type{
+    margin-bottom: auto;
+  }
+  
+  .oculto{
+    opacity: 0;
+  }
+  
+  .imgOculta{
+    opacity: 0;
+  }
