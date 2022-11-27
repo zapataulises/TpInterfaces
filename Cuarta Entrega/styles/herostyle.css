@@ -122,12 +122,49 @@ list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 850px;
 }
 .descripcion img{
-    width: 5em;
+    width: 10em;
 }
-.descripcion h1{
-    color:#FFD6EB
+.descripcion p{
+    color:aliceblue
+}
+.lateral{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,0.3);
+    gap: 1em;
+    padding: 2em;
+    margin: 1em;
+    border-radius: 50px;
+    width: 70em;
+}
+.lateral img{
+    width: 30em;
+    border-radius: 20px;
 }
 
-
+.planetas {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.planeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    padding: 1em;
+    margin: 1em;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 20px;
+    width: 55em;
+    height: 32em;
+}
+.planeta img{
+    height: 25em;
+}
