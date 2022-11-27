@@ -239,6 +239,12 @@ h2{
 .off-plan{
     display: none;
 }
+.off-plan-izq{
+    animation: quitar-izq 1s linear;
+}
+.off-plan-der{
+    animation: quitar-der 1s linear;
+}
 .on-plan-der{  
     display: flex;
     animation: centrar-der 1s linear;
@@ -246,16 +252,32 @@ h2{
 .on-plan-izq{
     display: flex;
     animation: centrar-izq 1s linear;
+    
 }
 
 
-
+@keyframes quitar-izq{
+    0%{
+        transform: translateX(0px)}
+    100%{
+        transform: translateX(-1920px)
+    }
+}
+@keyframes quitar-der{
+    0%{
+        transform: translateX(0px)}
+    100%{
+        transform: translateX(1920px)
+    }
+}
 @keyframes centrar-der{
     from{
         transform: translateX(1920px);
+        
     }
     to{
         transform: translateX(0px);
+       
     }
 }
 @keyframes centrar-izq{

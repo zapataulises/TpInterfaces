@@ -5,10 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
     var flechaDer= document.getElementById("f-der");
     let planetas= document.querySelectorAll(".planeta")
     let i=0
-    flechaDer.addEventListener("click", function () {
-        planetas[i].classList.add("off-plan");
+    flechaDer.addEventListener("click", async function () {
+        planetas[i].classList.add("off-plan-izq");
         planetas[i].classList.remove("on-plan-izq")
         planetas[i].classList.remove("on-plan-der"); 
+        await(delay(500));
+        planetas[i].classList.remove("off-plan-izq");
+        planetas[i].classList.add("off-plan");
         if (i==planetas.length-1) {
             i=-1
         }
@@ -18,11 +21,13 @@ document.addEventListener("DOMContentLoaded", function () {
         i++;
 
     })
-    flechaIzq.addEventListener("click", function () {
-       
-        planetas[i].classList.add("off-plan");
+    flechaIzq.addEventListener("click", async function () {
+        planetas[i].classList.add("off-plan-der");
         planetas[i].classList.remove("on-plan-izq"); 
         planetas[i].classList.remove("on-plan-der")
+        await(delay(500));
+        planetas[i].classList.remove("off-plan-der");
+        planetas[i].classList.add("off-plan");
         if (i==0) {
             i=planetas.length;
         }
@@ -31,4 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
         i--;
 
     })
+    function delay(time) {
+        console.log("hola");
+        return new Promise(resolve => setTimeout(resolve, time));
+      }
 })
