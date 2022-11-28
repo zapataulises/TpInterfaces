@@ -51,7 +51,7 @@ window.addEventListener("scroll", function () {
       imgs.forEach(function (t) {
         t.classList.add("imgOculta")
       })
-      if(scrollY < 30){
+      if(scrollY > 30){
         titulo.classList.add("efecto");
       }
       if (scrollY < 1200) {
@@ -63,14 +63,15 @@ window.addEventListener("scroll", function () {
         textos[1].classList.remove("oculto");
         imgs[1].classList.remove("imgOculta");
         navbar.classList.add("achicar");
+        navbar.classList.remove("desachicar")
       } 
-      else if(scrollY < 5500){
-        navbar.classList.add("achicar");
-      }
+      
     
       else {
         textos[2].classList.remove("oculto")
         imgs[2].classList.remove("imgOculta");
+        navbar.classLista.remove("achicar");
+        navbar.classList.add("desachicar");
       }
     })
     
