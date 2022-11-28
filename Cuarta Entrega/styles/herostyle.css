@@ -372,14 +372,13 @@ h2{
     height: 200px;
     height: 316px;;
     align-items: center;
-    background: url(/img/f1.jpg);
-    z-index: 1000000000000;
+    background: yellow;
   }
   .dragon1{
-    background: url(./img/spritesheet.png);
+    background: url(../img/spritesheet.png);
     height: 142px;
     width: 316px;
-    animation: onda 1s steps(4);
+    animation: onda 1s steps(4) infinite;
   }
 
   @keyframes onda{
