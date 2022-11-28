@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var flechaIzq= document.getElementById("f-izq");
     var flechaDer= document.getElementById("f-der");
     let planetas= document.querySelectorAll(".planeta")
+    var navbar = document.getElementById("navbarh");
     let i=0
     flechaDer.addEventListener("click", async function () {
         planetas[i].classList.add("off-plan-izq");
@@ -52,15 +53,21 @@ window.addEventListener("scroll", function () {
       if (scrollY < 1200) {
         textos[0].classList.remove("oculto");
         imgs[0].classList.remove("imgOculta");
+        navbar.classList.add("achicar");
       }
       else if (scrollY >= 1200 && scrollY < 1700) {
         textos[1].classList.remove("oculto");
         imgs[1].classList.remove("imgOculta");
-      } else {
+        navbar.classList.add("achicar");
+      } 
+      else if(scrollY < 5500){
+        navbar.classList.add("achicar");
+      }
+    
+      else {
         textos[2].classList.remove("oculto")
         imgs[2].classList.remove("imgOculta");
       }
-    
     })
     
     

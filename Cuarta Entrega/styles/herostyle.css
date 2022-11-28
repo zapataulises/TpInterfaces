@@ -338,3 +338,26 @@ h2{
         transform: scale(2);
     }
   }
+  .achicar{
+    animation: achicar 3s;
+  }
+  .desachicar{
+    animation: desachicar 3s linear infinite;
+  }
+  @keyframes achicar{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.5);
+    }
+  }
+  @keyframes desachicar{
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+  }
+  
