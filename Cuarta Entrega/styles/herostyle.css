@@ -248,11 +248,11 @@ h2{
 }
 .on-plan-der{  
     display: flex;
-    animation: centrar-der 1s linear;
+    animation: centrar-der 0.5s linear;
 }
 .on-plan-izq{
     display: flex;
-    animation: centrar-izq 1s linear;
+    animation: centrar-izq 0.5s linear;
     
 }
 
@@ -319,12 +319,15 @@ h2{
     opacity: 0;
   }
   .probando{
-    font-size: 25px;
+    position: absolute;
+    font-size: 50px;
     color: yellow;
     justify-content: center;
     display: flex;
     z-index: 1000;
-    margin-top: 305px;
+    top: 210px;
+    transition: opacity 0.5s;
+    transition: top 0.5s;
   }
   .efecto{
     animation: linear efectoTitulo 2s  ;
@@ -333,11 +336,11 @@ h2{
   @keyframes efectoTitulo{
     from{
         filter: opacity(1);
-        transform: scale(1);
+        transform: scale(2);
     }
     to{
         filter: opacity(0);
-        transform: scale(2);
+        transform: scale(1);
     }
   }
   .achicar{
