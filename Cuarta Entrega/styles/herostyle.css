@@ -23,6 +23,7 @@ html::-webkit-scrollbar {
     align-items: center;
     justify-content: space-between;
     margin: 0;
+    transition: 1.5s;
 }
 .icon{
     padding-left: 1em;
