@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var flechaDer= document.getElementById("f-der");
     let planetas= document.querySelectorAll(".planeta")
     var navbar = document.getElementById("navbarh");
-    
+    let icon = document.getElementById("icon");
     let i=0
     flechaDer.addEventListener("click", async function () {
         planetas[i].classList.add("off-plan-izq");
@@ -56,12 +56,17 @@ window.addEventListener("scroll", async function () {
 
       titulo.style.opacity
       if(scrollY==0){
-        navbar.style.transform="scale(1)"
+        navbar.style.transform="scale(1)";
+        navbar.style.height="auto";
+        icon.style.height="5.2em";
+        icon.style.width="5.2em";
       }
       if(scrollY<100 && scrollY>1){
         titulo.style.opacity= 1;
         titulo.style.top= '210px';
         navbar.style.transform="scale(0.5)"
+        icon.style.height="1.2em";
+        icon.style.width="1.2em";
       }
       else if(scrollY >= 100 && scrollY < 140){
         titulo.style.opacity=0.8;
