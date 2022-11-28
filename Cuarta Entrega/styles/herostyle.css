@@ -372,13 +372,14 @@ h2{
     height: 200px;
     height: 316px;;
     align-items: center;
-    background: yellow;
+    background-color: #a349a4;
+    padding-left: 50px;
   }
   .dragon1{
-    background: url(../img/spritesheet.png);
+    background: url(../img/354270a2-bb17-4e03-bd4c-af631efdebf9.jfif);
     height: 142px;
-    width: 316px;
-    animation: onda 1s steps(4) infinite;
+    width: 349px;
+    animation: onda 1s steps(3) infinite;
   }
 
   @keyframes onda{
@@ -386,6 +387,6 @@ h2{
         background-position: 0;
     }
     100%{
-        background-position-x: -1265px;
+        background-position-x: -1046px;
       }
   }
