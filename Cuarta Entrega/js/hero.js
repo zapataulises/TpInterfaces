@@ -65,8 +65,13 @@ window.addEventListener("scroll", async function () {
         titulo.style.opacity= 1;
         titulo.style.top= '210px';
         navbar.style.transform="scale(0.5)"
+<<<<<<< Updated upstream
         icon.style.height="1.2em";
         icon.style.width="1.2em";
+=======
+        navbar.style.top='0'
+
+>>>>>>> Stashed changes
       }
       else if(scrollY >= 100 && scrollY < 140){
         titulo.style.opacity=0.8;
