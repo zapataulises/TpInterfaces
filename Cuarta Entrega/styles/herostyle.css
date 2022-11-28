@@ -371,6 +371,7 @@ h2{
     display: flex;
     height: 200px;
     height: 316px;;
+    justify-content: space-between;
     align-items: center;
     background-color: #a349a4;
     padding-left: 50px;
