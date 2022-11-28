@@ -369,23 +369,22 @@ h2{
   /*Sprites*/
   .sprites{
     display: flex;
-    height: 200px;
-    height: 316px;;
+    height: 360px;;
     align-items: center;
-    background: yellow;
+    justify-content: center;
   }
   .dragon1{
-    background: url(../img/spritesheet.png);
-    height: 142px;
-    width: 316px;
-    animation: onda 1s steps(4) infinite;
+    background: url(../img/sprite2.png);
+    height: 420px;
+    width: 420px;
+    animation: onda 1.2s steps(8) infinite;
   }
 
   @keyframes onda{
     0%{
-        background-position: 0;
+        background-position-x: 0;
     }
     100%{
-        background-position-x: -1265px;
+        background-position-x: -3360px;
       }
   }
