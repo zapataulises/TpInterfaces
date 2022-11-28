@@ -55,9 +55,13 @@ window.addEventListener("scroll", async function () {
       })
 
       titulo.style.opacity
-      if(scrollY<100){
+      if(scrollY==0){
+        navbar.style.transform="scale(1)"
+      }
+      if(scrollY<100 && scrollY>1){
         titulo.style.opacity= 1;
         titulo.style.top= '210px';
+        navbar.style.transform="scale(0.5)"
       }
       else if(scrollY >= 100 && scrollY < 140){
         titulo.style.opacity=0.8;
