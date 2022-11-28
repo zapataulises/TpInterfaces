@@ -49,11 +49,11 @@ window.addEventListener("scroll", function () {
       imgs.forEach(function (t) {
         t.classList.add("imgOculta")
       })
-      if (scrollY < 900) {
+      if (scrollY < 1200) {
         textos[0].classList.remove("oculto");
         imgs[0].classList.remove("imgOculta");
       }
-      else if (scrollY >= 900 && scrollY < 1400) {
+      else if (scrollY >= 1200 && scrollY < 1700) {
         textos[1].classList.remove("oculto");
         imgs[1].classList.remove("imgOculta");
       } else {
