@@ -54,6 +54,9 @@ section{
     padding-inline: 1em;
     align-items: center;
     background-color: #190F41;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
 }
 
 .botonera{
@@ -1019,14 +1022,14 @@ label{margin-right: 2em;
     width: 3em;
 }
 .navbar{
-    animation: body 1s linear;
+    /*animation: body 1s linear;*/
 }
 .navbar:root  {
     /* Bind the animation to scroll */
     animation-delay: calc(var(--scroll) * -1s);
     animation-fill-mode: both;
   }
-
+  
 
 @keyframes body{
     from{transform:scale(1) ;}
