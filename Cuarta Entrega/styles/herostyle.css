@@ -327,7 +327,7 @@ h2{
     margin-top: 305px;
   }
   .efecto{
-    animation: linear efectoTitulo 2s infinite ;
+    animation: linear efectoTitulo 2s  ;
   }
   
   @keyframes efectoTitulo{
