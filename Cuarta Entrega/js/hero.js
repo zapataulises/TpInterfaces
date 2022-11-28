@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var flechaDer= document.getElementById("f-der");
     let planetas= document.querySelectorAll(".planeta")
     var navbar = document.getElementById("navbarh");
+    var titulo = document.querySelector(".probando");
     let i=0
     flechaDer.addEventListener("click", async function () {
         planetas[i].classList.add("off-plan-izq");
@@ -50,6 +51,9 @@ window.addEventListener("scroll", function () {
       imgs.forEach(function (t) {
         t.classList.add("imgOculta")
       })
+      if(scrollY < 30){
+        titulo.classList.add("efecto");
+      }
       if (scrollY < 1200) {
         textos[0].classList.remove("oculto");
         imgs[0].classList.remove("imgOculta");

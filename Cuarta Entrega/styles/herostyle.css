@@ -324,22 +324,24 @@ h2{
     justify-content: center;
     display: flex;
     z-index: 1000;
-    margin-top: 205px;
+    margin-top: 305px;
   }
   .efecto{
-    animation: linear efectoTitulo 2s infinite;
+    animation: linear efectoTitulo 2s infinite ;
   }
   
   @keyframes efectoTitulo{
     from{
+        filter: opacity(1);
         transform: scale(1);
     }
     to{
+        filter: opacity(0);
         transform: scale(2);
     }
   }
   .achicar{
-    animation: achicar 3s;
+    animation: achicar 3s ;
   }
   .desachicar{
     animation: desachicar 3s linear infinite;
