@@ -363,3 +363,27 @@ h2{
     }
   }
   
+  /*Sprites*/
+  .sprites{
+    display: flex;
+    height: 200px;
+    height: 316px;;
+    align-items: center;
+    background: url(/img/f1.jpg);
+    z-index: 1000000000000;
+  }
+  .dragon1{
+    background: url(./img/spritesheet.png);
+    height: 142px;
+    width: 316px;
+    animation: onda 1s steps(4);
+  }
+
+  @keyframes onda{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position-x: -1265px;
+      }
+  }

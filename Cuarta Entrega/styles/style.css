@@ -1036,6 +1036,7 @@ label{margin-right: 2em;
     to{transform: scale(0.7);
 }}
 
+/* Efectos del navVertical*/
 .move{
     animation: efectoMenu 0.5s linear;
 }
