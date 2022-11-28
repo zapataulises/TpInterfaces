@@ -25,6 +25,9 @@ html::-webkit-scrollbar {
     margin: 0;
     transition: 1.5s;
 }
+#menuVertical{
+    background-color: #1b0711;
+}
 .icon{
     padding-left: 1em;
     width: 5.2em;

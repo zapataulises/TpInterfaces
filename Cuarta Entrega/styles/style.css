@@ -44,19 +44,21 @@ section{
 }
 /*Header*/
 .icon{
+    padding-left: 1em;
     width: 5.2em;
     height: 5.2em;
 }
 
 .navbar{
     display: flex;
-    justify-content: space-between;
-    padding-inline: 1em;
-    align-items: center;
-    background-color: #190F41;
     position: fixed;
-    z-index: 1000;
     width: 100%;
+    z-index: 1000;
+    background-color: #190F41;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+
 }
 
 .botonera{
@@ -89,7 +91,7 @@ button{
         width: 2.5em;
     }
     .navbar{
-        padding-inline: 2em;
+        width: 100%;
     }
     .nav-btn{
         display: flex;
@@ -873,18 +875,17 @@ form {
     margin: -1px; padding: 0; border: 0;
 }
 label{margin-right: 2em;
+    z-index: 100000;
 }
 .menuBurger {
-    padding-right: 1em;
-    /*padding-left: 1em;
-*/
-    margin: 0 auto;
-    
+    z-index: 100000;
+    margin: 0 auto;  
     height: 30px;
     width: 30px;
     position: relative;
 }
 .menuBurger .linea {
+    z-index: 100000;
     padding: 0;
     width: 30px;
     height: 4px;
@@ -982,18 +983,20 @@ label{margin-right: 2em;
     margin-top: 40px;
 }
 #menuVertical{
-    align-self: flex-end;
     position: absolute;
     list-style: none;
     width: auto;
-    top: 120%;
+    top: -100%;
+    right: -30px;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
-    background: transparent;
-    padding-right: 1em;
-    gap: 10px;
+    background-color: #190F41;
+    height: 680px;
+    gap: 5px;
     z-index: 1;
+    padding-right: 1em;
+    padding-top: 5em;
     padding-bottom: 1em;
 }
 .redMenu{
@@ -1041,19 +1044,15 @@ label{margin-right: 2em;
     animation: efectoMenu 0.5s linear;
 }
 .move1{
-    background: radial-gradient(50% 50% at 50% 50%, #8745DD 19.27%, #3D0D75 100%);
     animation: efectoMenu 1.1s linear;
 }
 .move2{
-    background: radial-gradient(50% 50% at 50% 50%, #8745DD 19.27%, #3D0D75 100%);
     animation: efectoMenu 1.2s linear;
 }
 .move3{
-    background: radial-gradient(50% 50% at 50% 50%, #8745DD 19.27%, #3D0D75 100%);
     animation: efectoMenu 1.3s linear;
 }
 .move4{
-    background: radial-gradient(50% 50% at 50% 50%, #8745DD 19.27%, #3D0D75 100%);
     animation: efectoMenu 1.4s linear;
 }
 @keyframes efectoMenu{
