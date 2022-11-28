@@ -876,8 +876,8 @@ label{margin-right: 2em;
 }
 .menuBurger {
     padding-right: 1em;
-    padding-left: 1em;
-
+    /*padding-left: 1em;
+*/
     margin: 0 auto;
     
     height: 30px;
@@ -985,7 +985,7 @@ label{margin-right: 2em;
     align-self: flex-end;
     position: absolute;
     list-style: none;
-    width:auto;
+    width: auto;
     top: 120%;
     flex-direction: column;
     align-items: flex-end;
@@ -1036,3 +1036,28 @@ label{margin-right: 2em;
     to{transform: scale(0.7);
 }}
 
+.move{
+    animation: efectoMenu 0.5s linear;
+}
+.move1{
+    animation: efectoMenu 1.1s linear;
+}
+.move2{
+    animation: efectoMenu 1.2s linear;
+}
+.move3{
+    animation: efectoMenu 1.3s linear;
+}
+.move4{
+    animation: efectoMenu 1.4s linear;
+}
+@keyframes efectoMenu{
+    from{
+        transform: translateX(1920px);
+        
+    }
+    to{
+        transform: translateX(0px);
+       
+    }
+}

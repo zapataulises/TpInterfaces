@@ -10,6 +10,7 @@ document.querySelector("#burger").addEventListener("click", function () {
         
 
         burgerMenu.classList.add("menu-on");
+        burgerMenu.classList.add("move");
         burgerMenu.classList.remove("menu-off");
         burger=1;
     }
@@ -17,6 +18,7 @@ document.querySelector("#burger").addEventListener("click", function () {
         burgerMenu.classList.remove("menu-on");
         burgerMenu.classList.add("menu-off");
         burger=0;
+
     }
 });
 
