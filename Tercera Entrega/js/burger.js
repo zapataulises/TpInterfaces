@@ -1,6 +1,8 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", function () {
 
+let botonera = document.querySelector(".navbar");
+let sticky = botonera.offsetTop;
 let burger=0;
 let burgerMenu=document.querySelector("#menuVertical");
 document.querySelector("#burger").addEventListener("click", function () {
@@ -16,6 +18,18 @@ document.querySelector("#burger").addEventListener("click", function () {
         burgerMenu.classList.add("menu-off");
         burger=0;
     }
-})
+});
+
+function stickyScroll(){
+    if (window.pageYOffset > sticky) {
+        botonera.classList.add("sticky");
+      } else {
+        botonera.classList.remove("sticky");
+      }
+}
+
+window.onscroll = function() {stickyScroll()};
+
+
 
 });

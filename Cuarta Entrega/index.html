@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GodJuegos</title>
+    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Galindo">
+</head>
+<body>
+    <div class="box-carga" id="carga">
+        <img src="img/icon.png" alt="" id="cargaLogo">
+            <h1>Cargando...</h1>
+            <div class="canvabox">
+                <canvas class="cargabarra"> </canvas>
+            </div>
+    </div>
+    <div id="home" class="completado">
+    <header class="navbar">
+        <a href="index.html"><img src="img/icon.png" alt="Logo GodJuegos" class="icon"></a>
+        <nav class="botonera">
+            <button class="boton">
+                <a href="#aventuras" class="nav-btn aventuranav" >
+                <img src="img/aventuraIcon.png" alt="aventura-logo" class="catLogo">
+                <p class="p2 aventuratext">Aventuras</p>
+                </a>
+            </button>
+            <button class="boton">
+                <a href="#accion" class="nav-btn accionnav">
+                <img src="img/accionIcon.png" alt="accion-logo" class="catLogo">
+                <p class="p2 acciontext">Acción</p>          
+                </a>
+            </button>
+            <button class="boton">
+                <a href="#casuales" class="nav-btn casualnav">
+                <img src="img/casualIcon.png" alt="casual-logo" class="catLogo">
+                <p class="p2 casualtext">Casual</p>               
+                </a>
+            </button>
+            <button class="boton">
+                <a href="#carreras" class="nav-btn carrerasnav">
+                <img src="img/carrerasIcon.png" alt="carreras-logo" class="catLogo">
+                <p class="p2 carrerastext">Carreras</p>
+                </a>
+            </button>
+            <button class="boton">
+                <a href="#deportes" class="nav-btn deportesnav">
+                <img src="img/deporteIcon.png" alt="Deportes-logo" class="catLogo">
+                <p class="p2 deportestext">Deportes</p>  
+                </a>
+            </button>
+        </nav>
+        <input type="checkbox" id="checkbox" class="checkbox">
+        <label for="checkbox">
+            <div class="menuBurger" id="burger">
+            <div class="linea linea1"></div>
+            <div class="linea linea2"></div>
+            <div class="linea linea3"></div>
+
+            
+        <ul id="menuVertical" class="menu-off">
+            <li class="user"><img src="img/User Logo (1).png" alt="userlogo"> GodJuegosAdmin</li>
+            <li class="move1"><a href="#">Cuenta<img src="img/cuenta.png" alt=""></a></li>
+            <li class="move2"><a href="#">Ayuda<img src="img/ayuda.png" alt=""></a></li>
+            <li class="move3"><a href="#">Contacto <img src="img/contacto.png" alt=""></a></li>
+            <li class="move4"><a href="#">Configuracion <img src="img/config.png" alt=""></a></li>
+            <li class="redMenu"><a href="http://instagram.com"><img src="img/igmenu.png" alt=""></a> <a href="http://twitter.com"><img src="img/twMenu.png" alt=""></a></li>
+        </ul>
+            </div>
+        </label>
+            
+       
+    </header>
+    
+    <a href="shard.html"><section class="hero-container">
+        <img class="hero" src="img/herocompleto.png" alt="">  
+    </section></a>
+    <section id="recomendados" class="menuSec">
+        <h1 class="categoria">Recomendados</h1>
+        <div class="carrusel">
+           <div class="portada">
+            <div class="boxe">
+                <img class= "juegos" src="img/cuatroenlinea.png" alt="">
+                    <a href="game.html"class="jugar">Jugar</a> 
+            </div>
+               <div class="boxe">
+                   <img class= "juegos" src="img/gta.jpg" alt="">
+                       <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                   <img class= "juegos" src="img/fifa.jpg" alt="">
+                       <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                   <img class= "juegos" src="img/wrc.jpg" alt="">
+                       <a class="jugar">Jugar</a>
+               </div>
+                <div class="boxe">
+                    <img class= "juegos-p" src="img/codbo2.png" alt="">
+                    <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                    <p class="precio">$150</p>
+                    <h1 class="comprar">Agregar al <br> Carrito</h1>
+                       
+                </div>
+                <div class="boxe">
+                    <img class= "juegos-p" src="img/mortalkombat11.jpg" alt="">
+                    <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                    <p class="precio">$110</p>
+                    <h1 class="comprar">Agregar al <br> Carrito</h1>
+                   
+                </div>
+               <div class="boxe">
+                   <img class= "juegos" src="img/legobatman.jpg" alt="">
+                       <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                <img class= "juegos" src="img/crash.jpg" alt="">
+                    <a class="jugar">Jugar</a>
+                </div>
+                <div class="boxe">
+                    <img class= "juegos-p" src="img/super-mario.jpg" alt="">
+                    <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                    <p class="precio">$99</p>
+                        <h1 class="comprar">Agregar al <br> Carrito</h1>
+                        
+                </div>
+                <div class="boxe">
+                    <img class= "juegos-p" src="img/spidermanpng.png" alt="">
+                    <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                    <p class="precio">$200</p>
+                    <h1 class="comprar">Agregar al <br> Carrito</h1>
+                    
+                </div>
+                <div class="boxe">
+                    <img class= "juegos-p" src="img/kakarot.png" alt="">
+                        <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                        <p class="precio">$50</p>
+                     <h1 class="comprar">Agregar al <br> Carrito</h1>
+                     
+                </div>
+                <div class="boxe">
+                    <img class= "juegos" src="img/fortnite.jpg" alt="">
+                        <a class="jugar">Jugar</a>
+                </div>
+                <div class="boxe">
+                    <img class= "juegos" src="img/apex.jpg" alt="">
+                    <a class="jugar">Jugar</a>
+                </div>
+                <div class="boxe">
+                    <img class= "juegos" src="img/dbziw.jpg" alt="">
+                    <a class="jugar">Jugar</a>
+                </div>
+                <div class="boxe">
+                    <img class= "juegos-p" src="img/pestrece.jpg" alt="">
+                    <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                    <p class="precio">$100</p>
+                    <h1 class="comprar">Agregar al <br> Carrito</h1>
+                </div>
+                <div class="boxe">
+                    <img class= "juegos" src="img/horizon.jpg" alt="">
+                    <a class="jugar">Jugar</a>
+                </div>
+                <div class="boxe">
+                    <img class= "juegos" src="img/Bo3.jpg" alt="">
+                    <a class="jugar">Jugar</a>
+                </div>
+                <div class="boxe">
+                    <img class= "juegos-p" src="img/pubg-mobile-portada.jpg" alt="">
+                    <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                    <p class="precio">$100</p>
+                    <h1 class="comprar">Agregar al <br> Carrito</h1>
+                </div>
+                <div class="boxe">
+                    <img class= "juegos-p" src="img/call-of-duty-warzone.jpg" alt="">
+                    <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                    <p class="precio">$198</p>
+                    <h1 class="comprar">Agregar al <br> Carrito</h1>
+                </div>
+           </div>
+        </div>
+       </section>
+       
+       <section id="aventuras" class="menuSec">
+        <h1 class="categoria">Aventuras</h1>
+        <div class="carrusel">
+           <div class="portada">
+               <div class="boxe">
+                   <img class= "juegos-p" src="img/stray.jpg" alt="">
+                   <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                   <p class="precio">$75</p>
+                       <h1 class="comprar">Agregar al <br> Carrito</h1>
+               </div>
+               <div class="boxe">
+                   <img class= "juegos" src="img/tlou.jpg" alt="">
+                       <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                   <img class= "juegos" src="img/Protector_of_earth.PNG.jpg" alt="">
+                       <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                   <img class= "juegos" src="img/fortnite.jpg" alt="">
+                       <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                   <img class= "juegos-p" src="img/bt3.jpg" alt="">
+                       <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                       <p class="precio">$110</p>
+                    <h1 class="comprar">Agregar al <br> Carrito</h1>
+               </div>
+               <div class="boxe">
+                   <img class= "juegos" src="img/Portada-Pacman.jpg" alt="">
+                    <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                <img class= "juegos-p" src="img/gta.jpg" alt="">
+                <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                <p class="precio">$125</p>
+                 <h1 class="comprar">Agregar al <br> Carrito</h1>
+                 
+            </div>
+            <div class="boxe">
+                <img class= "juegos" src="img/legobatman.jpg" alt="">
+                    <a class="jugar">Jugar</a>
+            </div>
+            <div class="boxe">
+                   <img class= "juegos-p" src="img/super-mario.jpg" alt="">
+                   <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                   <p class="precio">$99</p>
+                       <h1 class="comprar">Agregar al <br> Carrito</h1>
+                       
+               </div>
+            <div class="boxe">
+                <img class= "juegos-p" src="img/kakarot.png" alt="">
+                    <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                    <p class="precio">$50</p>
+                 <h1 class="comprar">Agregar al <br> Carrito</h1>
+                 
+            </div>
+              
+           </div>
+        </div>
+       </section>
+
+
+       <section id="accion" class="menuSec">
+        <h1 class="categoria">Accion</h1>
+        <div class="carrusel">
+           <div class="portada">
+            <div class="boxe">
+                <img class= "juegos-p" src="img/mortalkombat11.jpg" alt="">
+                <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                <p class="precio">$110</p>
+                <h1 class="comprar">Agregar al <br> Carrito</h1>
+               
+            </div>
+           <div class="boxe">
+               <img class= "juegos" src="img/legobatman.jpg" alt="">
+                   <a class="jugar">Jugar</a>
+           </div>
+            <div class="boxe">
+                <img class= "juegos-p" src="img/kakarot.png" alt="">
+                    <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                    <p class="precio">$50</p>
+                 <h1 class="comprar">Agregar al <br> Carrito</h1>
+                 
+            </div>
+            <div class="boxe">
+                <img class= "juegos-p" src="img/spidermanpng.png" alt="">
+                <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                <p class="precio">$200</p>
+                <h1 class="comprar">Agregar al <br> Carrito</h1>
+                
+            </div>
+            <div class="boxe">
+                <img class= "juegos-p" src="img/bt3.jpg" alt="">
+                    <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                    <p class="precio">$110</p>
+                 <h1 class="comprar">Agregar al <br> Carrito</h1>
+            </div>
+               <div class="boxe">
+                   <img class= "juegos-p" src="img/flatout.jpg" alt="">
+                   <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                   <p class="precio">$90</p>
+                       <h1 class="comprar">Agregar al <br> Carrito</h1>
+                       
+               </div>
+               <div class="boxe">
+                <img class= "juegos" src="img/tlou.jpg" alt="">
+                    <a class="jugar">Jugar</a>
+            </div>
+            <div class="boxe">
+                <img class= "juegos" src="img/Bo3.jpg" alt="">
+                <a class="jugar">Jugar</a>
+            </div>
+            <div class="boxe">
+                <img class= "juegos-p" src="img/pubg-mobile-portada.jpg" alt="">
+                <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                <p class="precio">$100</p>
+                <h1 class="comprar">Agregar al <br> Carrito</h1>
+            </div>
+            <div class="boxe">
+                <img class= "juegos-p" src="img/call-of-duty-warzone.jpg" alt="">
+                <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                <p class="precio">$198</p>
+                <h1 class="comprar">Agregar al <br> Carrito</h1>
+            </div>
+               <div class="boxe">
+                   <img class= "juegos" src="img/gta.jpg" alt="">
+                    <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                    <img class= "juegos" src="img/fortnite.jpg" alt="">
+                    <a class="jugar">Jugar</a>
+                </div>
+                <div class="boxe">
+                    <img class= "juegos-p" src="img/Grand_Theft_Auto_San_Andreas.JPG.jpg" alt="">
+                    <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                    <p class="precio">$200</p>
+                    <h1 class="comprar">Agregar al <br> Carrito</h1>
+                    
+                </div>
+                <div class="boxe">
+                    <img class= "juegos-p" src="img/codbo2.png" alt="">
+                    <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                    <p class="precio">$150</p>
+                    <h1 class="comprar">Agregar al <br> Carrito</h1>
+                </div>
+           </div>
+        </div>
+       </section>
+
+
+       <section id="casuales" class="menuSec">
+        <h1 class="categoria">Casuales</h1>
+        <div class="carrusel">
+           <div class="portada">
+               <div class="boxe">
+                   <img class= "juegos" src="img/ajedrez.jpg" alt="">
+                       <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                   <img class= "juegos" src="img/fortnite.jpg" alt="">
+                       <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                   <img class= "juegos" src="img/mxgp.jpg" alt="">
+                       <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                   <img class= "juegos-p" src="img/codbo2.png" alt="">
+                   <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                   <p class="precio">$150</p>
+                       <h1 class="comprar">Agregar al <br> Carrito</h1>
+                       
+               </div>
+               <div class="boxe">
+                   <img class= "juegos-p" src="img/fifa.jpg" alt="">
+                   <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                   <p class="precio">$170</p>
+                   <h1 class="comprar">Agregar al <br> Carrito</h1>
+                   
+               </div>
+               <div class="boxe">
+                   <img class= "juegos" src="img/nba.jpg" alt="">
+                       <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                <img class= "juegos" src="img/tennis-world-tour.jpg" alt="">
+                    <a class="jugar">Jugar</a>
+                </div>
+                <div class="boxe">
+                    <img class= "juegos-p" src="img/golf.jpg" alt="">
+                    <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                    <p class="precio">$100</p>
+                    <h1 class="comprar">Agregar al <br> Carrito</h1>
+                </div>
+                <div class="boxe">
+                    <img class= "juegos" src="img/nhl.jpg" alt="">
+                    <a class="jugar">Jugar</a>
+                </div>
+                <div class="boxe">
+                    <img class= "juegos" src="img/apex.jpg" alt="">
+                    <a class="jugar">Jugar</a>
+                </div>
+                <div class="boxe">
+                    <img class= "juegos" src="img/dbziw.jpg" alt="">
+                    <a class="jugar">Jugar</a>
+                </div>
+                <div class="boxe">
+                    <img class= "juegos-p" src="img/pestrece.jpg" alt="">
+                    <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                    <p class="precio">$100</p>
+                    <h1 class="comprar">Agregar al <br> Carrito</h1>
+                </div>
+                <div class="boxe">
+                    <img class= "juegos" src="img/horizon.jpg" alt="">
+                    <a class="jugar">Jugar</a>
+                </div>
+                <div class="boxe">
+                    <img class= "juegos" src="img/Bo3.jpg" alt="">
+                    <a class="jugar">Jugar</a>
+                </div>
+           </div>
+        </div>
+       </section>
+
+       <section id="carreras" class="menuSec">
+        <h1 class="categoria">Carreras</h1>
+        <div class="carrusel">
+           <div class="portada">
+               <div class="boxe">
+                   <img class= "juegos" src="img/supercross.jpg" alt="">
+                       <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                   <img class= "juegos" src="img/granturismo.jpg" alt="">
+                       <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                   <img class= "juegos-p" src="img/flatout.jpg" alt="">
+                   <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                   <p class="precio">$90</p>
+                       <h1 class="comprar">Agregar al <br> Carrito</h1>
+                       
+               </div>
+               <div class="boxe">
+                   <img class= "juegos" src="img/gta.jpg" alt="">
+                       <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                   <img class= "juegos" src="img/mxgp.jpg" alt="">
+                       <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                   <img class= "juegos-p" src="img/super-mario.jpg" alt="">
+                   <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                   <p class="precio">$99</p>
+                       <h1 class="comprar">Agregar al <br> Carrito</h1>
+                       
+               </div>
+               <div class="boxe">
+                <img class= "juegos-p" src="img/NFS.jpg" alt="">
+                <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                <p class="precio">$99</p>
+                    <h1 class="comprar">Agregar al <br> Carrito</h1>
+                    
+            </div>
+            <div class="boxe">
+                <img class= "juegos-p" src="img/splitG.jpg" alt="">
+                    <h1 class="jugar">Jugar</h1>
+                    
+            </div>
+            <div class="boxe">
+                <img class= "juegos-p" src="img/motorstorm.jpg" alt="">
+                <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                <p class="precio">$890</p>
+                    <h1 class="comprar">Agregar al <br> Carrito</h1>
+                    
+            </div>
+           </div>
+        </div>
+       </section>
+
+
+       <section id="deportes" class="menuSec">
+        <h1 class="categoria">Deportes</h1>
+        <div class="carrusel">
+           <div class="portada">
+               <div class="boxe">
+                   <img class= "juegos" src="img/pes.jpg" alt="">
+                       <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                   <img class= "juegos" src="img/fifa.jpg" alt="">
+                       <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                   <img class= "juegos" src="img/wrc.jpg" alt="">
+                       <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                   <img class= "juegos-p" src="img/nba.jpg" alt="">
+                   <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                   <p class="precio">$120</p>
+                       <h1 class="comprar">Agregar al <br> Carrito</h1>
+                       
+               </div>
+               <div class="boxe">
+                   <img class= "juegos-p" src="img/wwe.jpg" alt="">
+                   <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                   <p class="precio">$150</p>
+                   <h1 class="comprar">Agregar al <br> Carrito</h1>
+                   
+               </div>
+               <div class="boxe">
+                   <img class= "juegos" src="img/mxgp.jpg" alt="">
+                       <a class="jugar">Jugar</a>
+               </div>
+               <div class="boxe">
+                <img class= "juegos-p" src="img/pestrece.jpg" alt="">
+                <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                <p class="precio">$100</p>
+                <h1 class="comprar">Agregar al <br> Carrito</h1>
+            </div>
+               <div class="boxe">
+                <img class= "juegos" src="img/tennis-world-tour.jpg" alt="">
+                    <a class="jugar">Jugar</a>
+                </div>
+                <div class="boxe">
+                    <img class= "juegos-p" src="img/golf.jpg" alt="">
+                    <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                    <p class="precio">$35</p>
+                    <h1 class="comprar">Agregar al <br> Carrito</h1>
+                    
+                </div>
+                <div class="boxe">
+                    <img class= "juegos" src="img/nhl.jpg" alt="">
+                    <a class="jugar">Jugar</a>
+                </div>
+                <div class="boxe">
+                    <img class= "juegos" src="img/FIFA-Street-4.jpg" alt="">
+                    <a class="jugar">Jugar</a>
+                </div>
+                <div class="boxe">
+                    <img class= "juegos-p" src="img/Virtua_Tennis_pal.jpg" alt="">
+                    <img class="dolar" src="img/dollar_sign_PNG21539.png" alt="">
+                    <p class="precio">$100</p>
+                    <h1 class="comprar">Agregar al <br> Carrito</h1>
+                </div>
+           </div>
+        </div>
+       </section>
+
+
+    
+    <footer>
+        <h1>Acerca de GodJuegos</h1>
+        <div class="container">
+        <div class="footer-description">
+        <p>Olvidate del aburrimiento y de los juegos caros,
+            los mejores juegos al mejor precio los encuentras aquí. <br>
+            Nuestros juegos de acción solo son aptos para los más atrevidos
+            competirás con grandes pilotos en nuestros <br>juegos de carreras y 
+            sólo los auténticos exploradores llegarán a su meta en los juegos de aventura.</p>
+        <div class="redes">
+            <a href="http://instagram.com" class="instagram"><img src="img/ic20-instagram.png" alt="">Instagram</a>
+            <a href="http://twitter.com" class="twitter"><img src="img/ic20-twitter.png" alt=""> Twitter</a>
+        </div>
+    </div>
+        
+         <div class="contact">
+             <ul>
+                 <li>
+                    <a href="">Contacto</a> 
+                 </li>
+                 <li>
+                    <a href="">Sobre nosotros</a> 
+                 </li>
+                 <li>
+                    <a href="">Oportunidad laboral</a> 
+                 </li>
+                 <li>
+                    <a href="">Preguntas frecuentes</a> 
+                 </li>
+                 <li>
+                    <a href="">Tienes alguna idea?</a> 
+                 </li>
+             </ul>
+         </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&#169; 2022 GodJuegos . Digital Company</p>
+        </div>
+    </footer>
+</div>
+    <script src="js/main.js"></script>
+    <script src="js/burger.js"></script>
+</body>
+</html>
