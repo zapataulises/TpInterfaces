@@ -294,7 +294,7 @@ h2{
     position: absolute;
     font-size: 50px;
     color: yellow;
-    justify-content: center;
+    text-shadow: #1b0711 1px 0 10px;    justify-content: center;
     display: flex;
     z-index: 1000;
     top: 210px;
@@ -405,6 +405,9 @@ h2{
     align-items: center;
     justify-content: center;
     color: aliceblue;
+}
+.elemLaterales h2{
+    margin-top: 2em;
 }
 .laterales img{
     width: 10em;
