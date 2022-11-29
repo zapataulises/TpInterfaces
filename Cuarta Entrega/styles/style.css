@@ -59,7 +59,7 @@ section{
     align-items: center;
     justify-content: space-between;
     margin: 0;
-    top:0
+    top:0;
 
 }
 
@@ -318,6 +318,7 @@ footer li{
 
   /* Cuatro en linea*/
 .bread {
+    margin-top: 70px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -550,6 +551,7 @@ form {
 /*Hero*/
 
 .hero-container{
+    margin-top: 35px;
     display: flex;
     justify-content: center;
     width: 100%;
