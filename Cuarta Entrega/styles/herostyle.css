@@ -252,6 +252,7 @@ h2{
 }
 .on-plan-der{  
     display: flex;
+    opacity: 1;
     animation: centrar-der 0.5s linear;
 }
 .on-plan-izq{
@@ -416,3 +417,29 @@ h2{
     margin-bottom: 0px;
     transition: all 0.2s;
   }
+
+  .laterales{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,0.3);
+    gap: 1em;
+    padding: 2em;
+    margin: 1em;
+    border-radius: 50px;
+    width: 70em;
+}.off-plano{
+    opacity: 0;
+}
+.elemLaterales{
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+.laterales img{
+    width: 10em;
+    border-radius: 20px;
+}

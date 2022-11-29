@@ -133,11 +133,49 @@ nombre2.forEach(element => {
         element.style.margin='30px';
       }
 });
-console.log(scrollY);
       
+ console.log(scrollY);
+ let laterales= document.querySelectorAll(".laterales")
+if (scrollY >=3900 && scrollY < 4100) {
+  laterales[0].classList.remove("off-plan-izq");
+  laterales[0].classList.remove("off-plano");
+  laterales[0].classList.add("on-plan-der");
+  laterales[1].classList.add("off-plan-izq");
+  await(delay(100))
+  laterales[1].classList.remove("on-plan-der");
+  await(delay(100))
+  laterales[1].classList.add("off-plano");
 
+}
+else if (scrollY >= 4100 && scrollY < 4300) {
+  laterales[1].classList.remove("off-plan-izq");
+  laterales[1].classList.remove("off-plano");
+  laterales[1].classList.add("on-plan-der");
+  laterales[2].classList.add("off-plan-izq");
+  await(delay(100))
+  laterales[2].classList.remove("on-plan-der");
+  await(delay(100))
+  laterales[2].classList.add("off-plano");
 
+} 
+else if (scrollY >= 4300) {
+  laterales[2].classList.remove("off-plan-izq");
+  laterales[2].classList.remove("off-plano");
+  laterales[2].classList.add("on-plan-der");
+
+}
+else if(scrollY <3800){
+  laterales[0].classList.add("off-plan-izq");
+await(delay(10));
+  laterales[0].classList.remove("on-plan-der");
+await(delay(100))
+  laterales[0].classList.add("off-plano");
+
+  
+}
     })
+
+
     
 })
 
