@@ -392,3 +392,18 @@ h2{
         background-position-x: -3360px;
       }
   }
+  .personajes{
+    gap: 2em;
+    width: 100%;
+  }
+.personajes .cont-pjs{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+  .personaje img{
+    width: 250px;
+  }

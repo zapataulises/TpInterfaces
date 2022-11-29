@@ -54,7 +54,6 @@ window.addEventListener("scroll", async function () {
         t.classList.add("imgOculta")
       })
 
-      titulo.style.opacity
       if(scrollY==0){
         navbar.style.transform="scale(1)";
         navbar.style.height="auto";
@@ -64,8 +63,8 @@ window.addEventListener("scroll", async function () {
       if(scrollY<100 && scrollY>1){
         titulo.style.opacity= 1;
         titulo.style.top= '210px';
-        icon.style.height="1.2em";
-        icon.style.width="1.2em";
+        icon.style.height="3em";
+        icon.style.width="3em";
         navbar.style.top='0'
       }
       else if(scrollY >= 100 && scrollY < 140){
@@ -88,6 +87,8 @@ window.addEventListener("scroll", async function () {
         titulo.style.top= '460px';
         titulo.style.opacity=0;
       }
+
+      //
       if (scrollY >= 800 && scrollY < 1200) {
         textos[0].classList.remove("oculto");
         imgs[0].classList.remove("imgOculta");
@@ -95,21 +96,14 @@ window.addEventListener("scroll", async function () {
       else if (scrollY >= 1200 && scrollY < 1700) {
         textos[1].classList.remove("oculto");
         imgs[1].classList.remove("imgOculta");
-       // navbar.classList.add("achicar");
-        //navbar.classList.remove("desachicar")
       } 
-      
-    
       else {
         textos[2].classList.remove("oculto")
         imgs[2].classList.remove("imgOculta");
         titulo.classList.remove("oculto");
-        //navbar.classLista.remove("achicar");
-        //navbar.classList.add("desachicar");
       }
     })
     
-  //navbar.classList.add("achicar");
 })
 
     
