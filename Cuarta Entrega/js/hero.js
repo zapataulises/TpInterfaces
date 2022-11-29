@@ -64,7 +64,6 @@ window.addEventListener("scroll", async function () {
       if(scrollY<100 && scrollY>1){
         titulo.style.opacity= 1;
         titulo.style.top= '210px';
-        navbar.style.transform="scale(0.5)"
         icon.style.height="1.2em";
         icon.style.width="1.2em";
         navbar.style.top='0'
