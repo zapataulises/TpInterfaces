@@ -45,13 +45,14 @@ section{
 /*Header*/
 .icon{
     padding-left: 1em;
-    width: 5.2em;
-    height: 5.2em;
+    width: 4.2em;
+    height: 4.2em;
 }
 
 .navbar{
     display: flex;
     position: fixed;
+    height: 4em;
     width: 100%;
     z-index: 1000;
     background-color: #190F41;
