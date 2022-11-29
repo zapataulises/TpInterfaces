@@ -402,8 +402,17 @@ h2{
     flex-direction: row;
     justify-content: space-around;
 }
-
-
   .personaje img{
     width: 250px;
+  }
+
+  .nombre{
+    margin:  30px;
+    margin-bottom: 0px;
+    transition: all 0.2s;
+  }
+  .nombre2{
+    margin:  30px;
+    margin-bottom: 0px;
+    transition: all 0.2s;
   }

@@ -102,6 +102,41 @@ window.addEventListener("scroll", async function () {
         imgs[2].classList.remove("imgOculta");
         titulo.classList.remove("oculto");
       }
+//personajes
+let nombre=this.document.querySelectorAll(".nombre")
+nombre.forEach(element => {
+  if (scrollY >=2800 && scrollY < 2900) {
+        element.style.margin='20px';
+      }
+      else if (scrollY >= 2900 && scrollY < 3000) {
+        element.style.margin='10px';
+      } 
+      else if (scrollY >= 3000) {
+        element.style.margin='0px';
+      } 
+      else{
+        element.style.margin='30px';
+      }
+});
+let nombre2=this.document.querySelectorAll(".nombre2")
+nombre2.forEach(element => {
+  if (scrollY >=3200 && scrollY < 3300) {
+        element.style.margin='20px';
+      }
+      else if (scrollY >= 3300 && scrollY < 3400) {
+        element.style.margin='10px';
+      } 
+      else if (scrollY >= 3400) {
+        element.style.margin='0px';
+      } 
+      else{
+        element.style.margin='30px';
+      }
+});
+console.log(scrollY);
+      
+
+
     })
     
 })
