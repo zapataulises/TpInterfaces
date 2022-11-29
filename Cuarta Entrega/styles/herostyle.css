@@ -174,37 +174,6 @@ list-style: none;
 }
 /*carrusel*/
 
-.carrusel{
-    width: 240px;
-    height: 129px;margin-top: 50px;
-    margin-left: 500px;margin-bottom: 45px;
-    position: relative;
-    perspective: 720px;
-}
-.carru{
-    transform-style: preserve-3d;
-    animation: girar 30s infinite linear;
-}
-.carru figure{
-    display: block;
-    position: absolute;
-    background: black;
-    border: solid 1px #fffef8;
-  }
-.carru figure:nth-child(1){transform: rotateY(0deg) translateZ(220px);}
-.carru figure:nth-child(2){ transform: rotateY(40deg) translateZ(220px);}
-.carru figure:nth-child(3){ transform: rotateY(80deg) translateZ(220px);}
-.carru figure:nth-child(4){ transform: rotateY(120deg) translateZ(220px);}
-.carru figure:nth-child(5){ transform: rotateY(160deg) translateZ(220px);}
-.carru figure:nth-child(6){ transform: rotateY(200deg) translateZ(220px);}
-.carru figure:nth-child(7){ transform: rotateY(240deg) translateZ(220px);}
-.carru figure:nth-child(8){ transform: rotateY(280deg) translateZ(220px);}
-.carru figure:nth-child(9){ transform: rotateY(320deg) translateZ(220px);}
-
-.carru img:hover{
-  transform: scale(1.2,1.2);
-}
-
 @keyframes girar{
     from{
         transform: rotateY(0deg);
@@ -217,8 +186,6 @@ list-style: none;
     width: 100px;
     height: 100px;
 }
-.carru:hover{
-    animation-play-state: paused;}
 
 .flecha{
     height: 4px;
