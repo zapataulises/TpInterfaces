@@ -48,14 +48,14 @@ window.addEventListener("scroll", async function () {
     let titulo = document.querySelector(".probando");
     
     textos.forEach(function (t) {
-        t.classList.add("oculto")
+      //  t.classList.add("oculto")
       })
       imgs.forEach(function (t) {
         t.classList.add("imgOculta")
+        t.classList.remove("posicion");
       })
 
       if(scrollY==0){
-        navbar.style.transform="scale(1)";
         navbar.style.height="auto";
         icon.style.height="5.2em";
         icon.style.width="5.2em";
@@ -92,16 +92,21 @@ window.addEventListener("scroll", async function () {
       if (scrollY >= 800 && scrollY < 1200) {
         textos[0].classList.remove("oculto");
         imgs[0].classList.remove("imgOculta");
+        imgs[0].classList.add("posicion");
       }
       else if (scrollY >= 1200 && scrollY < 1700) {
         textos[1].classList.remove("oculto");
         imgs[1].classList.remove("imgOculta");
+        imgs[1].classList.add("posicion");
       } 
-      else {
+      else if (scrollY >= 1700) {
         textos[2].classList.remove("oculto")
         imgs[2].classList.remove("imgOculta");
         titulo.classList.remove("oculto");
+        imgs[2].classList.add("posicion2");
       }
+        
+      
 //personajes
 let nombre=this.document.querySelectorAll(".nombre")
 nombre.forEach(element => {

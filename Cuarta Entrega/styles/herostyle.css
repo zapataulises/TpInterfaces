@@ -124,11 +124,14 @@ list-style: none;
 
 .descripcion{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding-top: 850px;
 }
-.descripcion img{
+.logoH{
+    margin-top: 850px;
+    display: flex;
+    justify-content: center;
+}
+.logoH img{
     width: 10em;
 }
 .descripcion p{
@@ -138,14 +141,16 @@ list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(0,0,0,0.3);
+    align-self: end;
+    height: 25em;
     gap: 1em;
+    padding-top: 2em;
     padding: 2em;
     margin: 1em;
     border-radius: 50px;
     width: 70em;
 }
-.lateral img{
+.descripcion .img{
     width: 40em;
     border-radius: 20px;
 }
@@ -269,15 +274,31 @@ h2{
   }
 
 .texto{
+    position: relative;
     transition: opacity .4s ease-in-out;
     text-align: center;
+    right: -50%;
    
   }
-  
+  .izquierdaH{
+    display: flex;
+    flex-direction: column;
+    left: 20%;
+  }
   .img{
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
     transition: opacity .4s ease-in-out;
     background-color: antiquewhite;
     
+  }
+  .posicion{
+    position: fixed;
+  }
+  .posicion2{
+    position: absolute;
+    top: 260%;
   }
   .img:last-of-type{
     margin-bottom: auto;
