@@ -42,17 +42,23 @@ document.addEventListener("DOMContentLoaded", function () {
         return new Promise(resolve => setTimeout(resolve, time));
       }
 
+      let imgs = document.querySelectorAll(".img");
+      imgs.forEach(function (t) {
+        t.classList.add("imgOculta")
+        t.classList.remove("posicion");
+        t.classList.remove("posicion2")
+      })
 window.addEventListener("scroll", async function () {
     let textos = document.querySelectorAll(".texto");
-    let imgs = document.querySelectorAll(".img");
     let titulo = document.querySelector(".probando");
-    
+  
     textos.forEach(function (t) {
       //  t.classList.add("oculto")
       })
       imgs.forEach(function (t) {
         t.classList.add("imgOculta")
         t.classList.remove("posicion");
+        t.classList.remove("posicion2")
       })
 
       if(scrollY==0){
