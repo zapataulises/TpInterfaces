@@ -47,6 +47,7 @@ section{
     padding-left: 1em;
     width: 4.2em;
     height: 4.2em;
+    transition: all ease-in 0.9s;
 }
 
 .navbar{
@@ -60,9 +61,11 @@ section{
     justify-content: space-between;
     margin: 0;
     top:0;
-
+    transition: all ease-in 0.9s;
 }
-
+.reducesize{
+    height: 3em;
+}
 .botonera{
     display: none;
 }

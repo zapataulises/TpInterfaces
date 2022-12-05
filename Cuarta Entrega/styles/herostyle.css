@@ -124,11 +124,14 @@ list-style: none;
 
 .descripcion{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding-top: 850px;
 }
-.descripcion img{
+.logoH{
+    margin-top: 850px;
+    display: flex;
+    justify-content: center;
+}
+.logoH img{
     width: 10em;
 }
 .descripcion p{
@@ -138,14 +141,16 @@ list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(0,0,0,0.3);
+    align-self: end;
+    height: 25em;
     gap: 1em;
+    padding-top: 2em;
     padding: 2em;
     margin: 1em;
     border-radius: 50px;
     width: 70em;
 }
-.lateral img{
+.descripcion .img{
     width: 40em;
     border-radius: 20px;
 }
@@ -220,45 +225,82 @@ h2{
 .on-plan-der{  
     display: flex;
     opacity: 1;
-    animation: centrar-der 0.5s linear;
+    animation: centrar-der 1s linear;
 }
 .on-plan-izq{
     display: flex;
-    animation: centrar-izq 0.5s linear;
+    animation: centrar-izq 1s linear;
     
 }
 
 
 @keyframes quitar-izq{
     0%{
-        transform: translateX(0px)}
+        transform: translateX(0px)
+        translateY(0px)}
+    50%{
+        transform: translateX(-960px)
+        translateY(-50px)
+        }
     100%{
         transform: translateX(-1920px)
+        translateY(0px)
     }
 }
 @keyframes quitar-der{
     0%{
-        transform: translateX(0px)}
+        transform: translateX(0px)
+        translateY(0px)}
+    50%{
+        transform: translateX(960px)
+        translateY(-50px)
+        }
     100%{
         transform: translateX(1920px)
+        translateY(0px)
     }
 }
 @keyframes centrar-der{
-    from{
-        transform: translateX(1920px);
-        
+    0%{
+        transform: translateX(1920px)
+        scale(0.2)
+        translateY(0px)}
+    50%{
+        transform: translateX(960px)
+        scale(0.5)
+        translateY(50px)
+        }
+    80%{
+        transform: translateX(-50px)
+        scale(0.8)
+        translateY(10px)
+        }
+    100%{
+        transform: translateX(0px)
+        scale(1)
+        translateY(0px)
     }
-    to{
-        transform: translateX(0px);
-       
-    }
+    
 }
 @keyframes centrar-izq{
-    from{
-        transform: translateX(-1920px);
+    0%{
+        transform: translateX(-1920px)
+        scale(0.2)
+        translateY(0px)}
+    50%{
+        transform: translateX(-960px)
+        scale(0.5)
+        translateY(50px)
+        }
+    80%{
+        transform: translateX(50px)
+        scale(0.8)
+        translateY(10px)
     }
-    to{
-        transform: translateX(0px);
+    100%{
+        transform: translateX(0px)
+        scale(1)
+        translateY(0px)
     }
 }
 
@@ -269,15 +311,31 @@ h2{
   }
 
 .texto{
+    position: relative;
     transition: opacity .4s ease-in-out;
     text-align: center;
+    right: -50%;
    
   }
-  
+  .izquierdaH{
+    display: flex;
+    flex-direction: column;
+    left: 20%;
+  }
   .img{
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
     transition: opacity .4s ease-in-out;
     background-color: antiquewhite;
     
+  }
+  .posicion{
+    position: fixed;
+  }
+  .posicion2{
+    position: absolute;
+    top: 260%;
   }
   .img:last-of-type{
     margin-bottom: auto;
