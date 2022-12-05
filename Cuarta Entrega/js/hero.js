@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         planetas[i].classList.add("off-plan-der");
         planetas[i].classList.remove("on-plan-izq"); 
         planetas[i].classList.remove("on-plan-der")
-        await(delay(10));
+        await(delay(500));
         planetas[i].classList.remove("off-plan-der");
         planetas[i].classList.add("off-plan");
         if (i==0) {
