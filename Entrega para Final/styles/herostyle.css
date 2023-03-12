@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+}
+body{
+   background-color:#1b0711 ; 
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+.navbarh, .botonera{
+    display: flex;
+}
+.navbarh{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: linear-gradient(to bottom, #1b0711, rgba(0,0,0,0));
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    transition: 1s;
+}
+#menuVertical{
+    background-color: #1b0711;
+}
+.icon{
+    padding-left: 1em;
+    width: 5.2em;
+    height: 5.2em;
+}
+.botonera {
+gap: 2em;
+list-style: none;
+}
+.botonera li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+.imgParallax{
+    height: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.imgParallax img{
+    position: absolute;
+    width: 100%;
+}
+#capa1{
+    position: relative;
+}
+
+
+.capa{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+}
+.capa1{
+    background-image: url(../img/Parallax/FondoC1.png);
+}
+
+.capa2{
+    background-image: url(../img/Parallax/LunaC2.png);
+    transform-origin: 50% 33.73%;
+    animation: linear 20s girarluna infinite;
+}
+@keyframes girarluna {
+    0%{
+        transform:scale(1) rotate(0deg);}
+    50%{
+        transform: scale(1.1)rotate(180deg); ;}
+    100%{
+        transform: scale(1) rotate(360deg);}
+}
+.capa3{
+    background-image: url(../img/Parallax/NubesC3.png);
+    animation: linear 10s nube infinite;
+}
+@keyframes nube {
+    0%{transform:scaleX(1) ;}
+    50%{transform: scaleX(1.1);}
+    100%{transform: scaleX(1);}
+}
+.capa4{
+    background-image: url(../img/Parallax/CastilloC4.png);
+}
+.capa5{
+    background-image: url(../img/Parallax/CiudadC5.png);
+}
+.capa6{
+    background-image: url(../img/Parallax/CiudadC6.png);
+}
+.capa7{
+    background-image: url(../img/Parallax/CiudadC7.png);
+}
+.capa8{
+    background-image: url(../img/Parallax/CiudadC8.png);
+    background-repeat: repeat-x;
+    animation: linear 30s mover infinite;
+
+}
+@keyframes mover {
+    0%{background-position-x:0px ;}
+    100%{background-position-x: 1920px;}
+}
+.capa9{
+    background-image: url(../img/Parallax/VinC9.png);
+    animation: linear 5s vin infinite;
+}
+@keyframes vin {
+    0%{transform:scale(1) ;}
+    50%{transform: scale(1.2);}
+    100%{transform: scale(1);}
+}
+
+.descripcion{
+    display: flex;
+    align-items: center;
+}
+.logoH{
+    margin-top: 850px;
+    display: flex;
+    justify-content: center;
+}
+.logoH img{
+    width: 10em;
+}
+.descripcion p{
+    color:aliceblue
+}
+.lateral{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: end;
+    height: 25em;
+    gap: 1em;
+    padding-top: 2em;
+    padding: 2em;
+    margin: 1em;
+    border-radius: 50px;
+    width: 70em;
+}
+.descripcion .img{
+    width: 40em;
+    border-radius: 20px;
+}
+
+.planetas {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+.planeta{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    padding: 1em;
+    margin: 1em;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 20px;
+    width: 55em;
+    height: 32em;
+}
+.planeta img{
+    height: 25em;
+}
+/*carrusel*/
+
+@keyframes girar{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+  }
+.foto{
+    width: 100px;
+    height: 100px;
+}
+
+.flecha{
+    cursor: pointer;
+    height: 4px;
+    margin: 30px;
+    width: 50px;
+    background-color: white;
+}
+.cont-planetas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flecha-1, .flecha-4{
+ rotate: -45deg;
+}
+.flecha-2, .flecha-3{
+    rotate: 45deg;
+}
+h2{
+    text-align: center;
+    color: aliceblue;
+}
+.off-plan{
+    display: none;
+}
+.off-plan-izq{
+    animation: quitar-izq 0.5s linear;
+}
+.off-plan-der{
+    animation: quitar-der 0.5s linear;
+}
+.on-plan-der{  
+    display: flex;
+    opacity: 1;
+    animation: centrar-der 1s linear;
+}
+.on-plan-izq{
+    display: flex;
+    animation: centrar-izq 1s linear;
+    
+}
+
+
+@keyframes quitar-izq{
+    0%{
+        transform: translateX(0px)
+        translateY(0px)}
+    50%{
+        transform: translateX(-960px)
+        translateY(-50px)
+        }
+    100%{
+        transform: translateX(-1920px)
+        translateY(0px)
+    }
+}
+@keyframes quitar-der{
+    0%{
+        transform: translateX(0px)
+        translateY(0px)}
+    50%{
+        transform: translateX(960px)
+        translateY(-50px)
+        }
+    100%{
+        transform: translateX(1920px)
+        translateY(0px)
+    }
+}
+@keyframes centrar-der{
+    0%{
+        transform: translateX(1920px)
+        scale(0.2)
+        translateY(0px)}
+    50%{
+        transform: translateX(960px)
+        scale(0.5)
+        translateY(50px)
+        }
+    80%{
+        transform: translateX(-50px)
+        scale(0.8)
+        translateY(10px)
+        }
+    100%{
+        transform: translateX(0px)
+        scale(1)
+        translateY(0px)
+    }
+    
+}
+@keyframes centrar-izq{
+    0%{
+        transform: translateX(-1920px)
+        scale(0.2)
+        translateY(0px)}
+    50%{
+        transform: translateX(-960px)
+        scale(0.5)
+        translateY(50px)
+        }
+    80%{
+        transform: translateX(50px)
+        scale(0.8)
+        translateY(10px)
+    }
+    100%{
+        transform: translateX(0px)
+        scale(1)
+        translateY(0px)
+    }
+}
+
+.stickyScroll{
+    position: sticky;
+    height: 100%;
+    top: 30%;
+  }
+
+.texto{
+    position: relative;
+    transition: opacity .4s ease-in-out;
+    text-align: center;
+    left: 50%;
+   
+  }
+  .izquierdaH{
+    display: flex;
+    flex-direction: column;
+    left: 20%;
+  }
+  .img{
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    transition: all .4s ease-in-out;
+    background-color: antiquewhite;
+    
+  }
+  .posicion{
+    position: fixed;
+  }
+  .posicion2{
+    position: absolute;
+    top: 260%;
+  }
+  .img:last-of-type{
+    margin-bottom: auto;
+  }
+  
+  .oculto{
+    opacity: 0;
+  }
+  
+  .imgOculta{
+    opacity: 0;
+  }
+  .probando{
+    position: absolute;
+    font-size: 50px;
+    color: yellow;
+    text-shadow: #1b0711 1px 0 10px;    justify-content: center;
+    display: flex;
+    z-index: 1000;
+    top: 210px;
+    transition: opacity 0.5s;
+    transition: top 0.5s;
+  }
+  .efecto{
+    animation: linear efectoTitulo 2s  ;
+  }
+  
+  @keyframes efectoTitulo{
+    from{
+        filter: opacity(1);
+        transform: scale(2);
+    }
+    to{
+        filter: opacity(0);
+        transform: scale(1);
+    }
+  }
+  .achicar{
+    animation: achicar 3s ;
+  }
+  .desachicar{
+    animation: desachicar 3s linear infinite;
+  }
+  @keyframes achicar{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.5);
+    }
+  }
+  @keyframes desachicar{
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+  }
+  
+  /*Sprites*/
+  .sprites{
+    display: flex;
+    height: 360px;;
+    align-items: center;
+    justify-content: center;
+  }
+  .dragon1{
+    background: url(../img/sprite2.png);
+    height: 420px;
+    width: 420px;
+    animation: onda 1.2s steps(8) infinite;
+  }
+
+  @keyframes onda{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -3360px;
+      }
+  }
+  .personajes{
+    gap: 2em;
+    width: 100%;
+  }
+.personajes .cont-pjs{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+  .personaje img{
+    width: 250px;
+  }
+
+  .nombre{
+    margin:  30px;
+    margin-bottom: 0px;
+    transition: all 0.2s;
+  }
+  .nombre2{
+    margin:  30px;
+    margin-bottom: 0px;
+    transition: all 0.2s;
+  }
+
+  .laterales{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,0.3);
+    gap: 1em;
+    padding: 2em;
+    margin: 1em;
+    border-radius: 50px;
+    width: 70em;
+}.off-plano{
+    opacity: 0;
+}
+.elemLaterales{
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+.elemLaterales h2{
+    margin-top: 2em;
+}
+.laterales img{
+    width: 10em;
+    border-radius: 20px;
+}
