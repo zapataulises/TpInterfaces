@@ -235,6 +235,8 @@ footer li{
   .portada::-webkit-scrollbar-thumb{
     box-shadow: inset 0 0 10px rgb(174, 88, 201);
   }
+  
+
 .juegos{
     width: 150px;
     height: 200px;
@@ -1031,9 +1033,7 @@ label{margin-right: 2em;
 .user img{
     width: 3em;
 }
-.navbar{
-    /*animation: body 1s linear;*/
-}
+
 .navbar:root  {
     /* Bind the animation to scroll */
     animation-delay: calc(var(--scroll) * -1s);
